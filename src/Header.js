@@ -4,7 +4,7 @@ class Header extends React.Component {
   render () {
     return (
       <div className='app-header'>
-        <h2>Persona 5 Itemization Lookup</h2>
+        <h2>{this.props.title}</h2>
       </div>
     )
   }

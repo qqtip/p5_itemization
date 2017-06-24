@@ -3,7 +3,7 @@ import React from 'react'
 class TableRow extends React.Component {
   render () {
     return (
-      <tr>
+      <tr className={this.props.className}>
         <td>{this.props.item['Arcana']}</td>
         <td>{this.props.item['Persona']}</td>
         <td>{this.props.item['Itemization']}</td>

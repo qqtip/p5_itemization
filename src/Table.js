@@ -23,7 +23,9 @@ class Table extends React.Component {
 
   renderBody () {
     const rows = this.state.data.map((item, index) => {
-      return <TableRow key={index} item={item} />
+      const className = index % 2 ? 'odd-row' : 'even-row'
+
+      return <TableRow key={index} item={item} className={className} />
     })
 
     return <tbody>{rows}</tbody>
@@ -31,7 +33,7 @@ class Table extends React.Component {
 
   render () {
     return (
-      <table className='item-table'>
+      <table className='table'>
         {this.renderHeader()}
         {this.renderBody()}
       </table>
