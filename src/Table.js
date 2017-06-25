@@ -31,8 +31,8 @@ class Table extends React.Component {
             // sort numbers
             case 'level':
               return (sortedReverse)
-                ? a[column] < b[column]
-                : a[column] > b[column]
+                ? a[column] - b[column]
+                : b[column] - a[column]
             // sort strings
             default:
               return (sortedReverse)
@@ -44,7 +44,7 @@ class Table extends React.Component {
           switch (column) {
             // sort numbers
             case 'level':
-              return a[column] < b[column]
+              return a[column] - b[column]
             // sort strings
             default:
               return a[column].localeCompare(b[column])

@@ -21,7 +21,7 @@ class TableHeader extends React.Component {
           {this.renderSortableColumn('level')}
           {this.renderSortableColumn('itemization')}
           {this.renderSortableColumn('category')}
-          <th className='table-header mobile-hidden'>cescription</th>
+          <th className='table-header mobile-hidden'>description</th>
           <th className='table-header'>cost</th>
         </tr>
       </thead>
