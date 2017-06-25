@@ -1,41 +1,54 @@
 import React from 'react'
-import TableRow from './TableRow.js'
-import DATA from './data.json'
+import TableHeader from './TableHeader.js'
+import TableBody from './TableBody.js'
 
 class Table extends React.Component {
   constructor () {
     super()
 
+    const data = require('./data.json').slice()
+
     this.state = {
-      data: DATA// .splice()
+      sortedBy: null,
+      sortedReverse: true,
+      data: data
     }
   }
 
-  renderHeader () {
-    const columns = [
-      'Arcana', 'Persona', 'Itemization', 'Category', 'Description', 'HP / SP Cost'
-    ].map((label) => {
-      return <th key={label} className='table-header'>{label}</th>
+  sortByColumn (column) {
+    // pre-determine the new value of sortedReverse
+    const sortedBy = this.state.sortedBy
+    const sortedReverse = this.state.sortedReverse
+    const nowSortedReverse = sortedBy === column && !sortedReverse
+
+    new Promise((resolve, reject) => {
+      let data = this.state.data.slice()
+
+      data.sort((a, b) => {
+        // reverse sorting order if sorting by the same column
+        if (this.state.sortedBy === column) {
+          return (sortedReverse)
+            ? a[column].localeCompare(b[column])
+            : b[column].localeCompare(a[column])
+        // otherwise sort by the new column in natural order
+        } else {
+          return a[column].localeCompare(b[column])
+        }
+      })
+
+      resolve(data)
+    }).then((data) => {
+      this.setState({sortedBy: column})
+      this.setState({sortedReverse: nowSortedReverse})
+      this.setState({data: data})
     })
-
-    return <thead><tr>{columns}</tr></thead>
-  }
-
-  renderBody () {
-    const rows = this.state.data.map((item, index) => {
-      const className = index % 2 ? 'odd-row' : 'even-row'
-
-      return <TableRow key={index} item={item} className={className} />
-    })
-
-    return <tbody>{rows}</tbody>
   }
 
   render () {
     return (
       <table className='table'>
-        {this.renderHeader()}
-        {this.renderBody()}
+        <TableHeader onClick={this.sortByColumn.bind(this)} />
+        <TableBody data={this.state.data} />
       </table>
     )
   }

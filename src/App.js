@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header.js'
-import TableContainer from './TableContainer.js'
+import PageHeader from './PageHeader.js'
+import Table from './Table.js'
 import './App.css'
 
 class App extends React.Component {
@@ -9,9 +9,11 @@ class App extends React.Component {
 
     return (
       <div className='App'>
-        <Header title={title} />
+        <PageHeader title={title} />
 
-        <TableContainer />
+        <div className='table-container'>
+          <Table />
+        </div>
       </div>
     )
   }

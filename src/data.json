@@ -5,7 +5,7 @@
     "Itemization": "Paradise Lost",
     "Category": "Weapon - MC only",
     "Description": "Attack 290 / Accuracy 92 / +Reduce Curse dmg (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fool",
@@ -13,7 +13,7 @@
     "Itemization": "Riot Gun",
     "Category": "Skill - Physical - Gun",
     "Description": "Severe Gun damage to all foes.",
-    "HP / SP cost": "25% HP"
+    "Cost": "25% HP"
   },
   {
     "Arcana": "Fool",
@@ -21,7 +21,7 @@
     "Itemization": "Naraka Whip",
     "Category": "Weapon - Ann only",
     "Description": "Attack 252 / Accuracy 90 / +Freeze (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fool",
@@ -29,7 +29,7 @@
     "Itemization": "Thermopylae",
     "Category": "Skill - Support",
     "Description": "Increase party's Attack, Defense and Agility for 3 turns. Only usable if the party is being ambushed.",
-    "HP / SP cost": "30 SP"
+    "Cost": "30 SP"
   },
   {
     "Arcana": "Fool",
@@ -37,7 +37,7 @@
     "Itemization": "Crystal Skull",
     "Category": "Accessory",
     "Description": "All stats +5 / Evade magic (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fool",
@@ -45,7 +45,7 @@
     "Itemization": "Bear Gloves",
     "Category": "Weapon - Makoto only",
     "Description": "Attack 200 / Accuracy 90 / +Critical Rate up (med)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fool",
@@ -53,7 +53,7 @@
     "Itemization": "Matarukaja",
     "Category": "Skill - Support",
     "Description": "Increase party's Attack power for 3 turns.",
-    "HP / SP cost": "24 SP"
+    "Cost": "24 SP"
   },
   {
     "Arcana": "Fool",
@@ -61,7 +61,7 @@
     "Itemization": "Legion's Jail",
     "Category": "Accessory",
     "Description": " +Null Fear",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fool",
@@ -69,7 +69,7 @@
     "Itemization": "Fire Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Strengthen Fire attacks by 25%. Can stack.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fool",
@@ -77,7 +77,7 @@
     "Itemization": "Diarama",
     "Category": "Skill - Healing",
     "Description": "Moderately restore 1 ally's HP.",
-    "HP / SP cost": "6 SP"
+    "Cost": "6 SP"
   },
   {
     "Arcana": "Fool",
@@ -85,7 +85,7 @@
     "Itemization": "Lucky Punch",
     "Category": "Skill - Physical",
     "Description": "Minuscule Physical damage to 1 foe. High critical rate.",
-    "HP / SP cost": "6% HP"
+    "Cost": "6% HP"
   },
   {
     "Arcana": "Fool",
@@ -93,7 +93,7 @@
     "Itemization": "Arsene's Cane",
     "Category": "Weapon - MC only",
     "Description": "Attack 130 / Accuracy 92 / +Random Ailment (low)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fool",
@@ -101,7 +101,7 @@
     "Itemization": "White Headband",
     "Category": "Accessory",
     "Description": " +50 HP",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fool",
@@ -109,7 +109,7 @@
     "Itemization": "Growth 3",
     "Category": "Skill - Passive - Post Battle",
     "Description": "Persona gains full EXP even while inactive.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fool",
@@ -117,7 +117,7 @@
     "Itemization": "Hade's Harp",
     "Category": "Accessory",
     "Description": "Ag+3 / +Null Brainwash",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fool",
@@ -125,7 +125,7 @@
     "Itemization": "Agidyne",
     "Category": "Skill - Magic - Fire",
     "Description": "Heavy Fire damage to 1 foe.",
-    "HP / SP cost": "12 SP"
+    "Cost": "12 SP"
   },
   {
     "Arcana": "Magician",
@@ -133,7 +133,7 @@
     "Itemization": "Brave Blade",
     "Category": "Skill - Physical",
     "Description": "Colossal Physical damage to 1 foe",
-    "HP / SP cost": "24% HP"
+    "Cost": "24% HP"
   },
   {
     "Arcana": "Magician",
@@ -141,7 +141,7 @@
     "Itemization": "Fire Amp",
     "Category": "Skill - Passive - Offense",
     "Description": "Strengthen Fire attacks by 50%. Can stack.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Magician",
@@ -149,7 +149,7 @@
     "Itemization": "Bloodbath",
     "Category": "Skill - Physical",
     "Description": "Heavy Physical damage and inflict Fear (low odds) to all foes.",
-    "HP / SP cost": "19% HP"
+    "Cost": "19% HP"
   },
   {
     "Arcana": "Magician",
@@ -157,7 +157,7 @@
     "Itemization": "Masquerade Ribbon",
     "Category": "Weapon - Ann only",
     "Description": "Attack 172 / Accuracy 88 / +Dizzy (low)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Magician",
@@ -165,7 +165,7 @@
     "Itemization": "Maeiha",
     "Category": "Skill - Magic - Curse",
     "Description": "Light Curse damage to all foes.",
-    "HP / SP cost": "10 SP"
+    "Cost": "10 SP"
   },
   {
     "Arcana": "Magician",
@@ -173,7 +173,7 @@
     "Itemization": "Sleep Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Increase chance of inflicting Sleep.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Magician",
@@ -181,7 +181,7 @@
     "Itemization": "Pawzooka",
     "Category": "Gun - Haru only",
     "Description": "Attack 140 / Accuracy 89 / Rounds 1 / +Confuse (med)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Magician",
@@ -189,7 +189,7 @@
     "Itemization": "Frost Hood",
     "Category": "Protector - Morgana only",
     "Description": "Defense 130 / Evasion 20 / +20 SP",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Magician",
@@ -197,7 +197,7 @@
     "Itemization": "Pumpkin Bomb",
     "Category": "Gun - Ryuji only",
     "Description": "Attack 160 / Accuracy 82 / Rounds 4 / +Burn (med)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Priestess",
@@ -205,7 +205,7 @@
     "Itemization": "Sabazios",
     "Category": "Weapon - Makoto only",
     "Description": "Attack 280 / Accuracy 90 / +Critical rate up (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Priestess",
@@ -213,7 +213,7 @@
     "Itemization": "Snow Queen's Whip",
     "Category": "Weapon - Ann only",
     "Description": "Attack 210 / Accuracy 90 / +Auto-Sukukaja",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Priestess",
@@ -221,7 +221,7 @@
     "Itemization": "Mediarama",
     "Category": "Skill - Healing",
     "Description": "Moderately restore party's HP.",
-    "HP / SP cost": "12 SP"
+    "Cost": "12 SP"
   },
   {
     "Arcana": "Priestess",
@@ -229,7 +229,7 @@
     "Itemization": "Tempest Slash",
     "Category": "Skill - Physical",
     "Description": "Minuscule Physical damage to 1 foe 3x to 5x.",
-    "HP / SP cost": "17% HP"
+    "Cost": "17% HP"
   },
   {
     "Arcana": "Priestess",
@@ -237,7 +237,7 @@
     "Itemization": "Divine Grace",
     "Category": "Skill - Passive - Recovery",
     "Description": "Effects of healing magic are increased by 50%.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Priestess",
@@ -245,7 +245,7 @@
     "Itemization": "Zionga",
     "Category": "Skill - Magic - Electric",
     "Description": "Medium Electric damage to 1 foe.",
-    "HP / SP cost": "8 SP"
+    "Cost": "8 SP"
   },
   {
     "Arcana": "Priestess",
@@ -253,7 +253,7 @@
     "Itemization": "Freeze Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Increase chance of inflicting Freeze.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Priestess",
@@ -261,7 +261,7 @@
     "Itemization": "Silk Dress",
     "Category": "Protector - Women only",
     "Description": "Defense 60 / Evasion 10 / +Evade Magic (low)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Empress",
@@ -269,7 +269,7 @@
     "Itemization": "Claiomh Solais - Sable",
     "Category": "Weapon - Morgana only",
     "Description": "Attack 280 / Accuracy 90 / +50 SP",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Empress",
@@ -277,7 +277,7 @@
     "Itemization": "Khamrai Tao",
     "Category": "Accessory",
     "Description": " +Reduce Fire dmg (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Empress",
@@ -285,7 +285,7 @@
     "Itemization": "Mediarahan",
     "Category": "Skill - Healing",
     "Description": "Fully restore party's HP.",
-    "HP / SP cost": "30 SP"
+    "Cost": "30 SP"
   },
   {
     "Arcana": "Empress",
@@ -293,7 +293,7 @@
     "Itemization": "Deathbound",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage to all foes 1x to 2x.",
-    "HP / SP cost": "22% HP"
+    "Cost": "22% HP"
   },
   {
     "Arcana": "Empress",
@@ -301,7 +301,7 @@
     "Itemization": "Spirit Drain",
     "Category": "Skill - Magic - Almighty",
     "Description": "Drains SP from 1 foe.",
-    "HP / SP cost": "3 SP"
+    "Cost": "3 SP"
   },
   {
     "Arcana": "Empress",
@@ -309,7 +309,7 @@
     "Itemization": "Despair Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Increase chance of inflicting Despair.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Empress",
@@ -317,7 +317,7 @@
     "Itemization": "Vicious Strike",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage to all foes.",
-    "HP / SP cost": "18% HP"
+    "Cost": "18% HP"
   },
   {
     "Arcana": "Empress",
@@ -325,7 +325,7 @@
     "Itemization": "Queen's Necklace",
     "Category": "Accessory",
     "Description": "All stats+1 / +30 SP",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Emperor",
@@ -333,7 +333,7 @@
     "Itemization": "Wild Hunt",
     "Category": "Gun - Ann only",
     "Description": "Attack 386 / Accuracy 84 / +Despair (med)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Emperor",
@@ -341,7 +341,7 @@
     "Itemization": "Yagrush",
     "Category": "Gun - Haru only",
     "Description": "Attack 330 / Accuracy 80 / Rounds 1 / +Shock (med)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Emperor",
@@ -349,7 +349,7 @@
     "Itemization": "Elec Amp",
     "Category": "Skill - Passive - Offense",
     "Description": "Strengthen Electric attacks by 50%. Can stack.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Emperor",
@@ -357,7 +357,7 @@
     "Itemization": "King Frost Cape",
     "Category": "Protector - Unisex",
     "Description": "Defense 140 / Evasion 16 / +Reduce Ice dmg (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Emperor",
@@ -365,7 +365,7 @@
     "Itemization": "Invigorate 2",
     "Category": "Skill - Passive - Recovery",
     "Description": "Recover 5 SP each turn in battle.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Emperor",
@@ -373,7 +373,7 @@
     "Itemization": "Official's Robe",
     "Category": "Protector - Men only",
     "Description": "Defense 178 / Evasion 18 / +Evade Curse (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Emperor",
@@ -381,7 +381,7 @@
     "Itemization": "Growth 2",
     "Category": "Skill - Passive - Post Battle",
     "Description": "Persona gains 1/2 EXP while inactive.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Emperor",
@@ -389,7 +389,7 @@
     "Itemization": "Counter",
     "Category": "Skill - Passive - Counter",
     "Description": "10% chance of reflecting Physical attacks. Doesn't stack.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Emperor",
@@ -397,7 +397,7 @@
     "Itemization": "Tarukaja",
     "Category": "Skill - Support - Offense",
     "Description": "Increase 1 ally's Attack power for 3 turns.",
-    "HP / SP cost": "8 SP"
+    "Cost": "8 SP"
   },
   {
     "Arcana": "Emperor",
@@ -405,7 +405,7 @@
     "Itemization": "Regent",
     "Category": "Accessory",
     "Description": "Str+3 / +Critical Rate up (med)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hierophant",
@@ -413,7 +413,7 @@
     "Itemization": "Sudarshana",
     "Category": "Gun - Morgana only",
     "Description": "Attack 308 / Accuracy 98 / Rounds 5 / +Random Ailment (low)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hierophant",
@@ -421,7 +421,7 @@
     "Itemization": "Mafreidyne",
     "Category": "Skill - Magic - Nuclear",
     "Description": "Heavy Nuclear damage to all foes.",
-    "HP / SP cost": "22 SP"
+    "Cost": "22 SP"
   },
   {
     "Arcana": "Hierophant",
@@ -429,7 +429,7 @@
     "Itemization": "Masukunda",
     "Category": "Skill - Support - Defense",
     "Description": "Decrease all foes' Agility for 3 turns.",
-    "HP / SP cost": "24 SP"
+    "Cost": "24 SP"
   },
   {
     "Arcana": "Hierophant",
@@ -437,7 +437,7 @@
     "Itemization": "Makouga",
     "Category": "Skill - Magic - Bless",
     "Description": "Medium Bless damage to all foes.",
-    "HP / SP cost": "16 SP"
+    "Cost": "16 SP"
   },
   {
     "Arcana": "Hierophant",
@@ -445,7 +445,7 @@
     "Itemization": "Samarecarm",
     "Category": "Skill - Healing",
     "Description": "Revive 1 ally with all HP recovered.",
-    "HP / SP cost": "18 SP"
+    "Cost": "18 SP"
   },
   {
     "Arcana": "Hierophant",
@@ -453,7 +453,7 @@
     "Itemization": "Nuke Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Strengthen Nuclear attacks by 25%. Can stack.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hierophant",
@@ -461,7 +461,7 @@
     "Itemization": "Dekaja",
     "Category": "Skill - Support - Defense",
     "Description": "Negate all buff effects of all foes.",
-    "HP / SP cost": "10 SP"
+    "Cost": "10 SP"
   },
   {
     "Arcana": "Hierophant",
@@ -469,7 +469,7 @@
     "Itemization": "Maragi",
     "Category": "Skill - Magic - Fire",
     "Description": "Light Fire damage to all foes.",
-    "HP / SP cost": "10 SP"
+    "Cost": "10 SP"
   },
   {
     "Arcana": "Hierophant",
@@ -477,7 +477,7 @@
     "Itemization": "Cleave",
     "Category": "Skill - Physical",
     "Description": "Light Physical damage to 1 foe.",
-    "HP / SP cost": "6% HP"
+    "Cost": "6% HP"
   },
   {
     "Arcana": "Lovers",
@@ -485,7 +485,7 @@
     "Itemization": "Salvation",
     "Category": "Skill - Healing",
     "Description": "Fully restore HP and cure all ailments of party except for unique status.",
-    "HP / SP cost": "48 SP"
+    "Cost": "48 SP"
   },
   {
     "Arcana": "Lovers",
@@ -493,7 +493,7 @@
     "Itemization": "Heat Riser",
     "Category": "Skill - Support - Offense",
     "Description": "Increase 1 ally's Attack, Defense and Agility for 3 turns.",
-    "HP / SP cost": "30 SP"
+    "Cost": "30 SP"
   },
   {
     "Arcana": "Lovers",
@@ -501,7 +501,7 @@
     "Itemization": "Psiodyne",
     "Category": "Skill - Magic - Psychokinesis",
     "Description": "Heavy Psy damage to 1 foe.",
-    "HP / SP cost": "12 SP"
+    "Cost": "12 SP"
   },
   {
     "Arcana": "Lovers",
@@ -509,7 +509,7 @@
     "Itemization": "Daffodils",
     "Category": "Accessory",
     "Description": " +Null Despair",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Lovers",
@@ -517,7 +517,7 @@
     "Itemization": "Wind Wall",
     "Category": "Skill - Support - Shield",
     "Description": "Erect a shield on 1 ally to reduce Wind damage and cover innate Wind weakness for 3 turns.",
-    "HP / SP cost": "18 SP"
+    "Cost": "18 SP"
   },
   {
     "Arcana": "Lovers",
@@ -525,7 +525,7 @@
     "Itemization": "Senryou Yakusha",
     "Category": "Weapon - Yusuke only",
     "Description": "Attack 160 / Accuracy 90 / St+5",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Lovers",
@@ -533,7 +533,7 @@
     "Itemization": "Recarm",
     "Category": "Skill - Healing",
     "Description": "Revive 1 ally with 50% HP recovered.",
-    "HP / SP cost": "8 SP"
+    "Cost": "8 SP"
   },
   {
     "Arcana": "Lovers",
@@ -541,7 +541,7 @@
     "Itemization": "Rakukaja",
     "Category": "Skill - Support - Offense",
     "Description": "Increase 1 ally's Defense for 3 turns.",
-    "HP / SP cost": "8 SP"
+    "Cost": "8 SP"
   },
   {
     "Arcana": "Lovers",
@@ -549,7 +549,7 @@
     "Itemization": "Dia",
     "Category": "Skill - Healing",
     "Description": "Slightly restore 1 ally's HP.",
-    "HP / SP cost": "3 SP"
+    "Cost": "3 SP"
   },
   {
     "Arcana": "Chariot",
@@ -557,7 +557,7 @@
     "Itemization": "Arms Master",
     "Category": "Skill - Support - Offense",
     "Description": "Reduces HP cost of skill by half.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Chariot",
@@ -565,7 +565,7 @@
     "Itemization": "Mjolnir",
     "Category": "Weapon - Ryuji only",
     "Description": "Attack 254 / Accuracy 88 / +Elec attacks",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Chariot",
@@ -573,7 +573,7 @@
     "Itemization": "Agidyne",
     "Category": "Skill - Magic - Fire",
     "Description": "Heavy Fire damage to 1 foe.",
-    "HP / SP cost": "12 SP"
+    "Cost": "12 SP"
   },
   {
     "Arcana": "Chariot",
@@ -581,7 +581,7 @@
     "Itemization": "Triple Down",
     "Category": "Skill - Physical - Gun",
     "Description": "Light Gun damage to all foes 3x.",
-    "HP / SP cost": "16% HP"
+    "Cost": "16% HP"
   },
   {
     "Arcana": "Chariot",
@@ -589,7 +589,7 @@
     "Itemization": "Freila",
     "Category": "Skill - Magic - Nuclear",
     "Description": "Medium Nuclear damage to 1 foe.",
-    "HP / SP cost": "8 SP"
+    "Cost": "8 SP"
   },
   {
     "Arcana": "Chariot",
@@ -597,7 +597,7 @@
     "Itemization": "Regenerate 1",
     "Category": "Skill - Passive - Recovery",
     "Description": "Restore 2% of max HP each turn in battle.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Chariot",
@@ -605,7 +605,7 @@
     "Itemization": "Dormin Rush",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Sleep (low odds) to all foes.",
-    "HP / SP cost": "16% HP"
+    "Cost": "16% HP"
   },
   {
     "Arcana": "Chariot",
@@ -613,7 +613,7 @@
     "Itemization": "Mazio",
     "Category": "Skill - Magic - Electric",
     "Description": "Light Electric damage to all foes.",
-    "HP / SP cost": "10 SP"
+    "Cost": "10 SP"
   },
   {
     "Arcana": "Chariot",
@@ -621,7 +621,7 @@
     "Itemization": "Zio",
     "Category": "Skill - Magic - Electric",
     "Description": "Light Electric damage to 1 foe.",
-    "HP / SP cost": "4 SP"
+    "Cost": "4 SP"
   },
   {
     "Arcana": "Chariot",
@@ -629,7 +629,7 @@
     "Itemization": "Headbutt",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Forget (medium odds) to 1 foe.",
-    "HP / SP cost": "9% HP"
+    "Cost": "9% HP"
   },
   {
     "Arcana": "Justice",
@@ -637,7 +637,7 @@
     "Itemization": "Nataraja",
     "Category": "Gun - MC only",
     "Description": "Attack 360 / Accuracy 94 / Rounds 8 / All stats+5",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Justice",
@@ -645,7 +645,7 @@
     "Itemization": "Heaven's Gate",
     "Category": "Gun - Yusuke only",
     "Description": "Attack 378 / Accuracy 88 / Rounds 12 / Ag+10",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Justice",
@@ -653,7 +653,7 @@
     "Itemization": "Invigorate 3",
     "Category": "Skill - Passive - Recovery",
     "Description": "Recover 7 SP each turn in battle.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Justice",
@@ -661,7 +661,7 @@
     "Itemization": "Makougaon",
     "Category": "Skill - Magic - Bless",
     "Description": "Heavy Bless damage to all foes.",
-    "HP / SP cost": "22 SP"
+    "Cost": "22 SP"
   },
   {
     "Arcana": "Justice",
@@ -669,7 +669,7 @@
     "Itemization": "Mahamaon",
     "Category": "Skill - Magic - Bless",
     "Description": "Medium chance of instantly killing all foes.",
-    "HP / SP cost": "34 SP"
+    "Cost": "34 SP"
   },
   {
     "Arcana": "Justice",
@@ -677,7 +677,7 @@
     "Itemization": "Masukukaja",
     "Category": "Skill - Support - Offense",
     "Description": "Increase party's Agility for 3 turns.",
-    "HP / SP cost": "24 SP"
+    "Cost": "24 SP"
   },
   {
     "Arcana": "Justice",
@@ -685,7 +685,7 @@
     "Itemization": "Tetraja",
     "Category": "Skill - Support - Shield",
     "Description": "Erect shields on party to nullify insta-kill attacks.",
-    "HP / SP cost": "24 SP"
+    "Cost": "24 SP"
   },
   {
     "Arcana": "Justice",
@@ -693,7 +693,7 @@
     "Itemization": "Dazzler",
     "Category": "Skill - Magic - Ailment",
     "Description": "Inflict Dizzy (high odds) to 1 foe.",
-    "HP / SP cost": "5 SP"
+    "Cost": "5 SP"
   },
   {
     "Arcana": "Justice",
@@ -701,7 +701,7 @@
     "Itemization": "Baisudi",
     "Category": "Skill - Healing",
     "Description": "Cure Burn/Freeze/Shock of 1 ally.",
-    "HP / SP cost": "4 SP"
+    "Cost": "4 SP"
   },
   {
     "Arcana": "Hermit",
@@ -709,7 +709,7 @@
     "Itemization": "Myriad Slashes",
     "Category": "Skill - Physical",
     "Description": "Medium Physical dmg to 1 enemy 2-3 times",
-    "HP / SP cost": "20% HP"
+    "Cost": "20% HP"
   },
   {
     "Arcana": "Hermit",
@@ -717,7 +717,7 @@
     "Itemization": "Garudyne",
     "Category": "Skill - Magic - Wind",
     "Description": "Heavy Wind damage to 1 foe.",
-    "HP / SP cost": "10 SP"
+    "Cost": "10 SP"
   },
   {
     "Arcana": "Hermit",
@@ -725,7 +725,7 @@
     "Itemization": "Regenerate 2",
     "Category": "Skill - Passive - Recovery",
     "Description": "Recover 4% of max HP each turn in battle.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hermit",
@@ -733,7 +733,7 @@
     "Itemization": "Rage Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Increase chance of inflicting Rage.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hermit",
@@ -741,7 +741,7 @@
     "Itemization": "Tapsuan",
     "Category": "Protector - Women only",
     "Description": "Defense 160 / Evasion 12 / +Evade Wind (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hermit",
@@ -749,7 +749,7 @@
     "Itemization": "Elec Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Strengthen Electric attacks by 25%. Can stack.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hermit",
@@ -757,7 +757,7 @@
     "Itemization": "Magaru",
     "Category": "Skill - Magic - Wind",
     "Description": "Light Wind damage to all foes.",
-    "HP / SP cost": "8 SP"
+    "Cost": "8 SP"
   },
   {
     "Arcana": "Hermit",
@@ -765,7 +765,7 @@
     "Itemization": "Sledgehammer",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Dizzy (medium odds) to 1 foe.",
-    "HP / SP cost": "10% HP"
+    "Cost": "10% HP"
   },
   {
     "Arcana": "Hermit",
@@ -773,7 +773,7 @@
     "Itemization": "Garu",
     "Category": "Skill - Magic - Wind",
     "Description": "Light Wind damage to 1 foe.",
-    "HP / SP cost": "4 SP"
+    "Cost": "4 SP"
   },
   {
     "Arcana": "Hermit",
@@ -781,7 +781,7 @@
     "Itemization": "Bufu",
     "Category": "Skill - Magic - Ice",
     "Description": "Light Ice damage to 1 foe.",
-    "HP / SP cost": "4 SP"
+    "Cost": "4 SP"
   },
   {
     "Arcana": "Fortune",
@@ -789,7 +789,7 @@
     "Itemization": "Life Aid",
     "Category": "Skill - Passive - Post Battle",
     "Description": "Recover 8% of max HP and SP after battle.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fortune",
@@ -797,7 +797,7 @@
     "Itemization": "Diarahan",
     "Category": "Skill - Healing",
     "Description": "Fully restore 1 ally's HP.",
-    "HP / SP cost": "18 SP"
+    "Cost": "18 SP"
   },
   {
     "Arcana": "Fortune",
@@ -805,7 +805,7 @@
     "Itemization": "Fast Heal",
     "Category": "Skill - Passive - Recovery",
     "Description": "Half the time needed to recover from ailments.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fortune",
@@ -813,7 +813,7 @@
     "Itemization": "Mazionga",
     "Category": "Skill - Magic - Electric",
     "Description": "Medium Electric damage to all foes.",
-    "HP / SP cost": "16 SP"
+    "Cost": "16 SP"
   },
   {
     "Arcana": "Fortune",
@@ -821,7 +821,7 @@
     "Itemization": "Ice Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Strengthen Ice attacks by 25%. Can stack.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fortune",
@@ -829,7 +829,7 @@
     "Itemization": "Invigorate 1",
     "Category": "Skill - Passive - Recovery",
     "Description": "Recover 3 SP each turn in battle.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fortune",
@@ -837,7 +837,7 @@
     "Itemization": "Stone of Scone",
     "Category": "Accessory",
     "Description": "En+3 / +Reduce Physical dmg (low)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fortune",
@@ -845,7 +845,7 @@
     "Itemization": "Red Yarn Ball",
     "Category": "Accessory",
     "Description": "Lu+10 / Auto-Tarukaja",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fortune",
@@ -853,7 +853,7 @@
     "Itemization": "Auto-Mataru",
     "Category": "Skill - Passive - Offense",
     "Description": "Automatic Matarukaja at the start of battle. (Overwrites Attack Master)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fortune",
@@ -861,7 +861,7 @@
     "Itemization": "Thunder Horns",
     "Category": "Accessory",
     "Description": "En+10 / +Fire attacks",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Fortune",
@@ -869,7 +869,7 @@
     "Itemization": "Gigantomachia",
     "Category": "Skill - Physical",
     "Description": "Colossal Physical damage to all foes.",
-    "HP / SP cost": "25% HP"
+    "Cost": "25% HP"
   },
   {
     "Arcana": "Strength",
@@ -877,7 +877,7 @@
     "Itemization": "God's Hand",
     "Category": "Skill - Physical",
     "Description": "Colossal Physical damage to 1 foe.",
-    "HP / SP cost": "25% HP"
+    "Cost": "25% HP"
   },
   {
     "Arcana": "Strength",
@@ -885,7 +885,7 @@
     "Itemization": "Vorpal Blade",
     "Category": "Skill - Physical",
     "Description": "Severe Physical damage to all foes.",
-    "HP / SP cost": "23% HP"
+    "Cost": "23% HP"
   },
   {
     "Arcana": "Strength",
@@ -893,7 +893,7 @@
     "Itemization": "Giant Slice",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage to 1 foe.",
-    "HP / SP cost": "9% HP"
+    "Cost": "9% HP"
   },
   {
     "Arcana": "Strength",
@@ -901,7 +901,7 @@
     "Itemization": "Sharp Student",
     "Category": "Skill - Passive - Defense",
     "Description": "Lower odds of receiving critical hit.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Strength",
@@ -909,7 +909,7 @@
     "Itemization": "Orlove",
     "Category": "Accessory",
     "Description": "Ma+3 / +Repel Physical (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Strength",
@@ -917,7 +917,7 @@
     "Itemization": "Mind Slice",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Confuse (low odds) to all foes.",
-    "HP / SP cost": "19% HP"
+    "Cost": "19% HP"
   },
   {
     "Arcana": "Strength",
@@ -925,7 +925,7 @@
     "Itemization": "Rampage",
     "Category": "Skill - Physical",
     "Description": "Light Physical damage to all foes 1x to 3x.",
-    "HP / SP cost": "13% HP"
+    "Cost": "13% HP"
   },
   {
     "Arcana": "Strength",
@@ -933,7 +933,7 @@
     "Itemization": "Forget Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Increase chance of inflicting Forget.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Strength",
@@ -941,7 +941,7 @@
     "Itemization": "Terror Claw",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Fear (medium odds) to 1 foe.",
-    "HP / SP cost": "8% HP"
+    "Cost": "8% HP"
   },
   {
     "Arcana": "Hanged",
@@ -949,7 +949,7 @@
     "Itemization": "Enduring Soul",
     "Category": "Skill - Passive - Per Battle",
     "Description": "Survive one fatal blow with HP completely recovered.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hanged",
@@ -957,7 +957,7 @@
     "Itemization": "Kuzuryu Gouhou",
     "Category": "Gun - Yusuke only",
     "Description": "Attack 300 / Accuracy 88 / Rounds 9 / +Random Ailment (low)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hanged",
@@ -965,7 +965,7 @@
     "Itemization": "Nuke Amp",
     "Category": "Skill - Passive - Offense",
     "Description": "Strengthen Nuclear attacks by 50%. Can stack.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hanged",
@@ -973,7 +973,7 @@
     "Itemization": "Endure",
     "Category": "Skill - Passive - Per Battle",
     "Description": "Survive one fatal blow with 1 HP remaining.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hanged",
@@ -981,7 +981,7 @@
     "Itemization": "Emperor's Amulet",
     "Category": "Accessory",
     "Description": "En+5 / +Auto-Tarukaja",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hanged",
@@ -989,7 +989,7 @@
     "Itemization": "Thunder Band",
     "Category": "Accessory",
     "Description": " +Null Shock",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hanged",
@@ -997,7 +997,7 @@
     "Itemization": "Burn Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Increase chance of inflicting Burn.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Hanged",
@@ -1005,7 +1005,7 @@
     "Itemization": "Agilao",
     "Category": "Skill - Magic - Fire",
     "Description": "Medium Fire damage to 1 foe.",
-    "HP / SP cost": "8 SP"
+    "Cost": "8 SP"
   },
   {
     "Arcana": "Hanged",
@@ -1013,7 +1013,7 @@
     "Itemization": "Brain Shake",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Brainwash (medium odds) to 1 foe.",
-    "HP / SP cost": "9% HP"
+    "Cost": "9% HP"
   },
   {
     "Arcana": "Death",
@@ -1021,7 +1021,7 @@
     "Itemization": "Mamudoon",
     "Category": "Skill - Magic - Curse",
     "Description": "Medium chance of instantly killing all foes.",
-    "HP / SP cost": "34 SP"
+    "Cost": "34 SP"
   },
   {
     "Arcana": "Death",
@@ -1029,7 +1029,7 @@
     "Itemization": "Concentrate",
     "Category": "Skill - Support - Offense",
     "Description": "Multiply user's next magical attack damage by 2.5.",
-    "HP / SP cost": "15 SP"
+    "Cost": "15 SP"
   },
   {
     "Arcana": "Death",
@@ -1037,7 +1037,7 @@
     "Itemization": "Deadly Fury",
     "Category": "Skill - Physical",
     "Description": "Severe Physical damage to 1 foe. More powerful under Baton Pass.",
-    "HP / SP cost": "18% HP"
+    "Cost": "18% HP"
   },
   {
     "Arcana": "Death",
@@ -1045,7 +1045,7 @@
     "Itemization": "Megidola",
     "Category": "Skill - Magic - Almighty",
     "Description": "Heavy Almighty damage to all foes.",
-    "HP / SP cost": "24 HP"
+    "Cost": "24 HP"
   },
   {
     "Arcana": "Death",
@@ -1053,7 +1053,7 @@
     "Itemization": "Hope Diamond",
     "Category": "Accessory",
     "Description": "All stats+3 / Regenerate 3",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Death",
@@ -1061,7 +1061,7 @@
     "Itemization": "Black Jacket",
     "Category": "Protector - Men only",
     "Description": "Defense 120 / Evasion 12 / Prevents insta-kill from Curse",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Death",
@@ -1069,7 +1069,7 @@
     "Itemization": "Headhunter Ladle",
     "Category": "Weapon - Morgana only",
     "Description": "Attack 128 / Accuracy 90 / +Critical Rate up (low)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Death",
@@ -1077,7 +1077,7 @@
     "Itemization": "Garula",
     "Category": "Skill - Magic - Wind",
     "Description": "Medium Wind damage to 1 foe.",
-    "HP / SP cost": "6 SP"
+    "Cost": "6 SP"
   },
   {
     "Arcana": "Death",
@@ -1085,7 +1085,7 @@
     "Itemization": "Energy Drop",
     "Category": "Skill - Healing",
     "Description": "Cure Confuse/Fear/Despair/Rage/Brainwash of 1 ally.",
-    "HP / SP cost": "4 SP"
+    "Cost": "4 SP"
   },
   {
     "Arcana": "Death",
@@ -1093,7 +1093,7 @@
     "Itemization": "Dekunda",
     "Category": "Skill - Support - Offense",
     "Description": "Negate all debuff effects of party.",
-    "HP / SP cost": "10 SP"
+    "Cost": "10 SP"
   },
   {
     "Arcana": "Death",
@@ -1101,7 +1101,7 @@
     "Itemization": "Darkness Ring",
     "Category": "Accessory",
     "Description": " +Evade Curse (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Death",
@@ -1109,7 +1109,7 @@
     "Itemization": "Maeigaon",
     "Category": "Skill - Magic - Curse",
     "Description": "Heavy Curse damage to all foes.",
-    "HP / SP cost": "22 SP"
+    "Cost": "22 SP"
   },
   {
     "Arcana": "Temperance",
@@ -1117,7 +1117,7 @@
     "Itemization": "Agneyastra",
     "Category": "Skill - Physical",
     "Description": "Medium Physical dmg to all foes 1-3 times.",
-    "HP / SP cost": "24% HP"
+    "Cost": "24% HP"
   },
   {
     "Arcana": "Temperance",
@@ -1125,7 +1125,7 @@
     "Itemization": "Mabufudyne",
     "Category": "Skill - Magic - Ice",
     "Description": "Heavy Ice damage to all foes.",
-    "HP / SP cost": "22 SP"
+    "Cost": "22 SP"
   },
   {
     "Arcana": "Temperance",
@@ -1133,7 +1133,7 @@
     "Itemization": "Amrita Drop",
     "Category": "Skill - Healing",
     "Description": "Cure all ailments of 1 ally except for unique status.",
-    "HP / SP cost": "6 SP"
+    "Cost": "6 SP"
   },
   {
     "Arcana": "Temperance",
@@ -1141,7 +1141,7 @@
     "Itemization": "Swift Strike",
     "Category": "Skill - Physical",
     "Description": "Light Physical damage to all foes 3x to 4x.",
-    "HP / SP cost": "17% HP"
+    "Cost": "17% HP"
   },
   {
     "Arcana": "Temperance",
@@ -1149,7 +1149,7 @@
     "Itemization": "Ziodyne",
     "Category": "Skill - Magic - Electric",
     "Description": "Heavy Electric damage to 1 foe.",
-    "HP / SP cost": "12 SP"
+    "Cost": "12 SP"
   },
   {
     "Arcana": "Temperance",
@@ -1157,7 +1157,7 @@
     "Itemization": "Death Contract",
     "Category": "Weapon - Haru only",
     "Description": "Attack 140 / Accuracy 86 / +Despair (low)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Temperance",
@@ -1165,7 +1165,7 @@
     "Itemization": "Memory Blow",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Forget (low odds) to all foes.",
-    "HP / SP cost": "15% HP"
+    "Cost": "15% HP"
   },
   {
     "Arcana": "Temperance",
@@ -1173,7 +1173,7 @@
     "Itemization": "Me Patra",
     "Category": "Skill - Healing",
     "Description": "Cure Dizzy/Forget/Sleep/Hunger of party.",
-    "HP / SP cost": "8 SP"
+    "Cost": "8 SP"
   },
   {
     "Arcana": "Temperance",
@@ -1181,7 +1181,7 @@
     "Itemization": "Growth 1",
     "Category": "Skill - Passive - Post Battle",
     "Description": "Persona gains 1/4 EXP while inactive.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Temperance",
@@ -1189,7 +1189,7 @@
     "Itemization": "Makajama",
     "Category": "Skill - Magic - Ailment",
     "Description": "Inflict Forget (high odds) to 1 foe.",
-    "HP / SP cost": "5 SP"
+    "Cost": "5 SP"
   },
   {
     "Arcana": "Temperance",
@@ -1197,7 +1197,7 @@
     "Itemization": "Patra",
     "Category": "Skill - Healing",
     "Description": "Cure Dizzy/Forget/Sleep/Hunger of 1 ally.",
-    "HP / SP cost": "4 SP"
+    "Cost": "4 SP"
   },
   {
     "Arcana": "Devil",
@@ -1205,7 +1205,7 @@
     "Itemization": "Fleurs du Mal",
     "Category": "Weapon - Haru only",
     "Description": "Attack 308 / Accuracy 86 / Ma+5 / +Dizzy (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Devil",
@@ -1213,7 +1213,7 @@
     "Itemization": "Maragion",
     "Category": "Skill - Magic - Fire",
     "Description": "Medium Fire damage to all foes.",
-    "HP / SP cost": "16 SP"
+    "Cost": "16 SP"
   },
   {
     "Arcana": "Devil",
@@ -1221,7 +1221,7 @@
     "Itemization": "Eigaon",
     "Category": "Skill - Magic - Curse",
     "Description": "Heavy Curse damage to 1 foe.",
-    "HP / SP cost": "12 SP"
+    "Cost": "12 SP"
   },
   {
     "Arcana": "Devil",
@@ -1229,7 +1229,7 @@
     "Itemization": "Shock Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Increase chance of inflicting Shock.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Devil",
@@ -1237,7 +1237,7 @@
     "Itemization": "Maeiga",
     "Category": "Skill - Magic - Curse",
     "Description": "Medium Curse damage to all foes.",
-    "HP / SP cost": "16 SP"
+    "Cost": "16 SP"
   },
   {
     "Arcana": "Devil",
@@ -1245,7 +1245,7 @@
     "Itemization": "Lullaby",
     "Category": "Skill - Magic - Ailment",
     "Description": "Inflict Sleep (medium odds) to all foes.",
-    "HP / SP cost": "12 SP"
+    "Cost": "12 SP"
   },
   {
     "Arcana": "Devil",
@@ -1253,7 +1253,7 @@
     "Itemization": "Shackles",
     "Category": "Accessory",
     "Description": " +Null Rage",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Devil",
@@ -1261,7 +1261,7 @@
     "Itemization": "Ice Break",
     "Category": "Skill - Support - Negation",
     "Description": "Suppress innate Ice resistances of all foes for 3 turns.",
-    "HP / SP cost": "15 SP"
+    "Cost": "15 SP"
   },
   {
     "Arcana": "Devil",
@@ -1269,7 +1269,7 @@
     "Itemization": "Dream Needle",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Sleep (medium odds) to 1 foe.",
-    "HP / SP cost": "8% HP"
+    "Cost": "8% HP"
   },
   {
     "Arcana": "Tower",
@@ -1277,7 +1277,7 @@
     "Itemization": "Unshaken Will",
     "Category": "Skill - Passive - Offense",
     "Description": "Impart immunity against all psychological ailments.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Tower",
@@ -1285,7 +1285,7 @@
     "Itemization": "Usumidori",
     "Category": "Weapon - Yusuke only",
     "Description": "Attack 292 / Accuracy 88 / +Fear (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Tower",
@@ -1293,7 +1293,7 @@
     "Itemization": "Maragidyne",
     "Category": "Skill - Magic - Fire",
     "Description": "Heavy Fire damage to all foes.",
-    "HP / SP cost": "22 SP"
+    "Cost": "22 SP"
   },
   {
     "Arcana": "Tower",
@@ -1301,7 +1301,7 @@
     "Itemization": "Bad Beat",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Despair (low odds) to all foes.",
-    "HP / SP cost": "21% HP"
+    "Cost": "21% HP"
   },
   {
     "Arcana": "Tower",
@@ -1309,7 +1309,7 @@
     "Itemization": "One-shot Kill",
     "Category": "Skill - Physical -Gun",
     "Description": "Severe Gun damage to 1 foe. High critical rate.",
-    "HP / SP cost": "17% HP"
+    "Cost": "17% HP"
   },
   {
     "Arcana": "Tower",
@@ -1317,7 +1317,7 @@
     "Itemization": "Psy Break",
     "Category": "Skill - Support - Negation",
     "Description": "Suppress innate Psy resistances of all foes for 3 turns.",
-    "HP / SP cost": "15 SP"
+    "Cost": "15 SP"
   },
   {
     "Arcana": "Tower",
@@ -1325,7 +1325,7 @@
     "Itemization": "Mabufula",
     "Category": "Skill - Magic - Ice",
     "Description": "Medium Ice damage to all foes.",
-    "HP / SP cost": "16 SP"
+    "Cost": "16 SP"
   },
   {
     "Arcana": "Tower",
@@ -1333,7 +1333,7 @@
     "Itemization": "Flash Bomb",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Dizzy (low odds) to all foes.",
-    "HP / SP cost": "19% HP"
+    "Cost": "19% HP"
   },
   {
     "Arcana": "Tower",
@@ -1341,7 +1341,7 @@
     "Itemization": "Black Headband",
     "Category": "Accessory",
     "Description": " +40 SP",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Tower",
@@ -1349,7 +1349,7 @@
     "Itemization": "Heat Riser",
     "Category": "Skill - Support - Offense",
     "Description": "Increase 1 ally's Attack, Defense and Agility for 3 turns.",
-    "HP / SP cost": "30 SP"
+    "Cost": "30 SP"
   },
   {
     "Arcana": "Star",
@@ -1357,7 +1357,7 @@
     "Itemization": "Tyrant Pistol",
     "Category": "Gun - MC only",
     "Description": "Attack 390 / Accuracy 98 / Rounds 8 / Ma+10",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Star",
@@ -1365,7 +1365,7 @@
     "Itemization": "Archangel Bra",
     "Category": "Protector - Women only",
     "Description": "Defense 200 / Evasion 18 / +Reduce Elec dmg (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Star",
@@ -1373,7 +1373,7 @@
     "Itemization": "Charge",
     "Category": "Skill - Support - Offense",
     "Description": "Multiply user's next Physical or Gun attack damage by 2.5.",
-    "HP / SP cost": "15 SP"
+    "Cost": "15 SP"
   },
   {
     "Arcana": "Star",
@@ -1381,7 +1381,7 @@
     "Itemization": "Ruyi Jingu Bang",
     "Category": "Weapon - Ryuji only",
     "Description": "Attack 256 / Accuracy 88 / +Auto-Tarukaja",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Star",
@@ -1389,7 +1389,7 @@
     "Itemization": "Wind Amp",
     "Category": "Skill - Passive - Offense",
     "Description": "Strengthen Wind attacks by 50%. Can stack.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Star",
@@ -1397,7 +1397,7 @@
     "Itemization": "Hua Khon",
     "Category": "Accessory",
     "Description": "Prevents insta-kill from Bless",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Star",
@@ -1405,7 +1405,7 @@
     "Itemization": "Mapsio",
     "Category": "Skill - Magic - Psychokinesis",
     "Description": "Medium Psy damage to all foes.",
-    "HP / SP cost": "16 SP"
+    "Cost": "16 SP"
   },
   {
     "Arcana": "Star",
@@ -1413,7 +1413,7 @@
     "Itemization": "Catnap",
     "Category": "Gun - Morgana only",
     "Description": "Attack 168 / Accuracy 90 / Rounds 5 / +Sleep (med)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Star",
@@ -1421,7 +1421,7 @@
     "Itemization": "Wind Boost",
     "Category": "Skill - Magic - Wind",
     "Description": "Strengthen Wind attacks by 25%. Can stack.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Star",
@@ -1429,7 +1429,7 @@
     "Itemization": "Fear Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Increase chance of inflicting Fear.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Moon",
@@ -1437,7 +1437,7 @@
     "Itemization": "Angelic Grace",
     "Category": "Skill - Passive - Evasion",
     "Description": "Double evasion rate against all attacks except Bless/Curse/Almighty.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Moon",
@@ -1445,7 +1445,7 @@
     "Itemization": "Mabufudyne",
     "Category": "Skill - Magic - Ice",
     "Description": "Heavy Ice damage to all foes.",
-    "HP / SP cost": "22 SP"
+    "Cost": "22 SP"
   },
   {
     "Arcana": "Moon",
@@ -1453,7 +1453,7 @@
     "Itemization": "Marakunda",
     "Category": "Skill - Support - Defense",
     "Description": "Decrease all foes' Defense for 3 turns.",
-    "HP / SP cost": "24 SP"
+    "Cost": "24 SP"
   },
   {
     "Arcana": "Moon",
@@ -1461,7 +1461,7 @@
     "Itemization": "Stagnant Air",
     "Category": "Skill - Magic - Almighty",
     "Description": "Increase susceptibility to all ailments of all foes and allies.",
-    "HP / SP cost": "5 SP"
+    "Cost": "5 SP"
   },
   {
     "Arcana": "Moon",
@@ -1469,7 +1469,7 @@
     "Itemization": "Foul Breath",
     "Category": "Skill - Magic - Almighty",
     "Description": "Increase susceptibility to all ailments of 1 foe.",
-    "HP / SP cost": "8 SP"
+    "Cost": "8 SP"
   },
   {
     "Arcana": "Moon",
@@ -1477,7 +1477,7 @@
     "Itemization": "Mabufu",
     "Category": "Skill - Magic - Ice",
     "Description": "Light Ice damage to all foes.",
-    "HP / SP cost": "10 SP"
+    "Cost": "10 SP"
   },
   {
     "Arcana": "Moon",
@@ -1485,7 +1485,7 @@
     "Itemization": "Skull Cracker",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Confuse (medium odds) to 1 foe.",
-    "HP / SP cost": "10% HP"
+    "Cost": "10% HP"
   },
   {
     "Arcana": "Moon",
@@ -1493,7 +1493,7 @@
     "Itemization": "Brain Shot",
     "Category": "Gun - Ann only",
     "Description": "Attack 140 / Accuracy 84 / Rounds 12 / +Brainwash (med)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Moon",
@@ -1501,7 +1501,7 @@
     "Itemization": "Confuse Boost",
     "Category": "Skill - Passive - Offense",
     "Description": "Increase chance of inflicting Confuse.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Moon",
@@ -1509,7 +1509,7 @@
     "Itemization": "Moonlight Robe",
     "Category": "Protector - Women only",
     "Description": "Defense 30 / Evasion 30 / +Repel Physical (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Moon",
@@ -1517,7 +1517,7 @@
     "Itemization": "Diarahan",
     "Category": "Skill - Healing",
     "Description": "Fully restore 1 ally's HP.",
-    "HP / SP cost": "18 SP"
+    "Cost": "18 SP"
   },
   {
     "Arcana": "Moon",
@@ -1525,7 +1525,7 @@
     "Itemization": "Black Moon",
     "Category": "Accessory",
     "Description": " +Critical Rate up (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Moon",
@@ -1533,7 +1533,7 @@
     "Itemization": "Spell Master",
     "Category": "Skill - Passive - Offense",
     "Description": "Half SP cost for magic skills.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Sun",
@@ -1541,7 +1541,7 @@
     "Itemization": "Vajra",
     "Category": "Weapon - Makoto only",
     "Description": "Attack 272 / Accuracy 90 / +Random Ailment (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Sun",
@@ -1549,7 +1549,7 @@
     "Itemization": "Regenerate 3",
     "Category": "Skill - Passive - Recovery",
     "Description": "Recover 6% of max HP each turn in battle.",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Sun",
@@ -1557,7 +1557,7 @@
     "Itemization": "Black Wing Robe",
     "Category": "Protector - Unisex",
     "Description": "Defense 220 / Evasion 20 / +Reduce Nuke dmg (med)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Sun",
@@ -1565,7 +1565,7 @@
     "Itemization": "Kougaon",
     "Category": "Skill - Magic - Bless",
     "Description": "Heavy Bless damage to 1 foe.",
-    "HP / SP cost": "12 SP"
+    "Cost": "12 SP"
   },
   {
     "Arcana": "Sun",
@@ -1573,7 +1573,7 @@
     "Itemization": "Miracle Punch",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage to 1 foe. High critical rate.",
-    "HP / SP cost": "8% SP"
+    "Cost": "8% SP"
   },
   {
     "Arcana": "Sun",
@@ -1581,7 +1581,7 @@
     "Itemization": "Mirrirmina",
     "Category": "Gun - Makoto only",
     "Description": "Attack 200 / Accuracy 92 / Rounds 6 / Ma+5",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Sun",
@@ -1589,7 +1589,7 @@
     "Itemization": "Petra Genetrix",
     "Category": "Accessory",
     "Description": " +Null Burn",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Sun",
@@ -1597,7 +1597,7 @@
     "Itemization": "Mafrei",
     "Category": "Skill - Magic - Nuclear",
     "Description": "Light Nuclear damage to all foes.",
-    "HP / SP cost": "10 SP"
+    "Cost": "10 SP"
   },
   {
     "Arcana": "Judgement",
@@ -1605,7 +1605,7 @@
     "Itemization": "Tantric Oath",
     "Category": "Protector - Men only",
     "Description": "Defense 272 / Evasion 18 / +Reduce Magic dmg (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Judgement",
@@ -1613,7 +1613,7 @@
     "Itemization": "Judge of the Dead",
     "Category": "Gun - Makoto only",
     "Description": "Attack 380 / Accuracy 92 / Rounds 6 / All stats+10",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Judgement",
@@ -1621,7 +1621,7 @@
     "Itemization": "Megido Fire",
     "Category": "Gun - Ryuji only",
     "Description": "Attack 380 / Accuracy 98 / Rounds 3 / +Critical Rate up (low)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Judgement",
@@ -1629,7 +1629,7 @@
     "Itemization": "Makarakarn",
     "Category": "Skill - Support - Shield",
     "Description": "Erect a shield on 1 ally to repel 1 magical attack.",
-    "HP / SP cost": "36 SP"
+    "Cost": "36 SP"
   },
   {
     "Arcana": "Judgement",
@@ -1637,7 +1637,7 @@
     "Itemization": "Oni-Kagura",
     "Category": "Skill - Physical",
     "Description": "Medium Physical damage and inflict Rage (low odds) to all foes.",
-    "HP / SP cost": "16% HP"
+    "Cost": "16% HP"
   },
   {
     "Arcana": "Judgement",
@@ -1645,7 +1645,7 @@
     "Itemization": "Debilitate",
     "Category": "Skill - Support - Defense",
     "Description": "Decrease 1 foe's Attack, Defense and Agility for 3 turns.",
-    "HP / SP cost": "30 SP"
+    "Cost": "30 SP"
   },
   {
     "Arcana": "Judgement",
@@ -1653,7 +1653,7 @@
     "Itemization": "Makouha",
     "Category": "Skill - Magic - Bless",
     "Description": "Light Bless damage to all foes.",
-    "HP / SP cost": "10 SP"
+    "Cost": "10 SP"
   },
   {
     "Arcana": "Judgement",
@@ -1661,7 +1661,7 @@
     "Itemization": "Lucifer Guard",
     "Category": "Protector - Unisex",
     "Description": "Defense 250 / Evasion 10 / +Reduce Magic dmg (high)",
-    "HP / SP cost": ""
+    "Cost": ""
   },
   {
     "Arcana": "Judgement",
@@ -1669,6 +1669,6 @@
     "Itemization": "Insta-Heal",
     "Category": "Skill - Passive - Recovery",
     "Description": "Recover from an ailment in 1 turn.",
-    "HP / SP cost": ""
+    "Cost": ""
   }
 ]
