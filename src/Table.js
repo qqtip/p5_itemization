@@ -27,12 +27,28 @@ class Table extends React.Component {
       data.sort((a, b) => {
         // reverse sorting order if sorting by the same column
         if (this.state.sortedBy === column) {
-          return (sortedReverse)
-            ? a[column].localeCompare(b[column])
-            : b[column].localeCompare(a[column])
+          switch (column) {
+            // sort numbers
+            case 'level':
+              return (sortedReverse)
+                ? a[column] < b[column]
+                : a[column] > b[column]
+            // sort strings
+            default:
+              return (sortedReverse)
+                ? a[column].localeCompare(b[column])
+                : b[column].localeCompare(a[column])
+          }
         // otherwise sort by the new column in natural order
         } else {
-          return a[column].localeCompare(b[column])
+          switch (column) {
+            // sort numbers
+            case 'level':
+              return a[column] < b[column]
+            // sort strings
+            default:
+              return a[column].localeCompare(b[column])
+          }
         }
       })
 
