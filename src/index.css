@@ -21,7 +21,7 @@ thead.table-header {
 thead.table-header th.table-header {
   padding: 8px 4px;
   border: 1px solid #BBB !important;
-  color: #8f4648;
+  color: black;
   background-color: #f8f8f8;
 }
 thead.table-header th.table-header:hover {
@@ -39,7 +39,7 @@ tbody.table-body tr.even-row {
 }
 tbody.table-body tr:hover {
   cursor: default;
-  background-color: #ebebeb;
+  background-color: #ffe1e1;
 }
 tbody.table-body tr td.table-cell {
   margin: 0;
