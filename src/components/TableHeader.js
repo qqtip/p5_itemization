@@ -3,10 +3,10 @@ import React from 'react'
 class TableHeader extends React.Component {
   renderSortableColumn (column) {
     const className = 'table-header sortable'
-    const onClick = this.props.onClick
+    const clickHandler = this.props.onClick
 
     return (
-      <th className={className} onClick={() => onClick(column)}>
+      <th className={className} onClick={() => clickHandler(column)}>
         {column}
       </th>
     )

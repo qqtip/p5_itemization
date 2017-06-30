@@ -12,6 +12,28 @@ div.app-header h2.title {
   text-align: center;
 }
 
+div.search-wrapper {
+  margin: 7px auto;
+  width: 250px;
+}
+div.search-wrapper label.search-label {
+  font-size: 0.9em;
+}
+div.search-wrapper label.search-label div.search-label {
+  display: inline-block;
+  margin-right: 5px;
+}
+div.search-wrapper label.search-label input.search {
+  width: 70%;
+  padding: 4px 6px;
+  font-size: inherit;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #BBB;
+}
+
 table.table {
   margin: 5px auto;
   border-collapse: collapse;
