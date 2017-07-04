@@ -9,4 +9,4 @@ This is a database web app for looking up Persona 5 electric chair itemizations.
 ## Credits
 
 * [Info](https://docs.google.com/spreadsheets/d/1g2AQXcNtzuhdVlx77Y0V6O41uJyrNW2wpKPYlY-TFr8/)
-* [Inspiration](https://github.com/chinhodado/persona5_calculator)
+* [Inspiration](https://github.com/chinhodado/persona5_calculator) + some code, favicon
