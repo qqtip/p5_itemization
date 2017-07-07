@@ -1,5 +1,7 @@
 ## Persona 5 Itemization
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 Beginning August 1, you can kill some of your Personas in an Electric Chair in exchange for items or skill cards. However when you do so, you can only do this once a day. Also when using the electric chair execution, you also need a base material such as the Black Kogatana, Black Robe, or the Model Gun. For skill cards, you’ll need Blank Cards which you can find lying around Mementos. [Source](https://samurai-gamers.com/persona-5/item-skill-conversion-electric-chair/)
 
 ## About
