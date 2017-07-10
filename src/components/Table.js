@@ -2,6 +2,10 @@ import React from 'react'
 import TableHeader from './TableHeader.js'
 import TableBody from './TableBody.js'
 
+import jquery from 'jquery'
+window.$ = window.jQuery = jquery
+require('sticky-table-headers')
+
 class Table extends React.Component {
   constructor () {
     super()
@@ -15,6 +19,7 @@ class Table extends React.Component {
   }
 
   componentWillReceiveProps (newProps) {
+    // filter then sort data
     this.setState({data:
       this.sort(
         this.filter(newProps.searchTerm.toLowerCase())
@@ -22,11 +27,16 @@ class Table extends React.Component {
     })
   }
 
+  componentDidMount () {
+    // initialize the table header to stick when scrolling
+    jquery('table.table').stickyTableHeaders()
+  }
+
   filter (filterText) {
-    const ALL_DATA = require('../assets/data/rows.json')
+    const completeData = require('../assets/data/rows.json')
     let data = []
 
-    for (let item of ALL_DATA.slice()) {
+    for (let item of completeData.slice()) {
       if (item.arcana.toLowerCase().search(filterText) >= 0 ||
           item.persona.toLowerCase().search(filterText) >= 0 ||
           item.itemization.toLowerCase().search(filterText) >= 0 ||
@@ -39,8 +49,10 @@ class Table extends React.Component {
   }
 
   setSortingColumn (column) {
+    // reverse sorting order if the same column is selected
     if (this.sortColumn === column) {
       this.sortReverse = !this.sortReverse
+    // otherwise sort by the new column
     } else {
       this.sortColumn = column
       this.sortedReverse = false
@@ -56,13 +68,15 @@ class Table extends React.Component {
     let newData = data.slice()
 
     newData.sort((a, b) => {
-      if (this.sortReverse) {
-        return (sortColumn === 'level')
+      // sort numerically for level column
+      if (sortColumn === 'level') {
+        return (this.sortReverse)
           ? b[sortColumn] - a[sortColumn]
-          : b[sortColumn].localeCompare(a[sortColumn])
+          : a[sortColumn] - b[sortColumn]
+      // sort lexicographically for other columns
       } else {
-        return (sortColumn === 'level')
-          ? a[sortColumn] - b[sortColumn]
+        return (this.sortReverse)
+          ? b[sortColumn].localeCompare(a[sortColumn])
           : a[sortColumn].localeCompare(b[sortColumn])
       }
     })
