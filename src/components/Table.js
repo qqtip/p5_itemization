@@ -1,25 +1,23 @@
 import React from 'react'
 import TableHeader from './TableHeader.js'
 import TableBody from './TableBody.js'
-
 import jquery from 'jquery'
-window.$ = window.jQuery = jquery
-require('sticky-table-headers')
 
 class Table extends React.Component {
-  constructor () {
+  /* props */
+  // columns
+  // data
+  // searchTerm
+
+  constructor (props) {
     super()
 
     this.sortColumn = 'arcana'
     this.sortReverse = false
     this.setSortingColumn = this.setSortingColumn.bind(this)
 
-    const data = this.completeData()
+    const data = this.filter(props.data.slice(), props.searchTerm)
     this.state = { data: data }
-  }
-
-  completeData () {
-    return require('../assets/data/itemizations.json')
   }
 
   /* update data when this Table receives a new search term */
@@ -28,8 +26,8 @@ class Table extends React.Component {
     this.setState({data:
       this.sort(
         this.filter(
-          this.completeData(),
-          newProps.searchTerm.toLowerCase()
+          this.props.data.slice(),
+          newProps.searchTerm
         )
       )
     })
@@ -37,6 +35,8 @@ class Table extends React.Component {
 
   /* initialize the table header to stick when scrolling */
   componentDidMount () {
+    window.$ = window.jQuery = jquery
+    require('sticky-table-headers')
     jquery('table.table').stickyTableHeaders()
   }
 
@@ -77,13 +77,11 @@ class Table extends React.Component {
 
   /* filters the given data filtered by the given text and returns it */
   filter (data, filterText) {
+    filterText = filterText.toLowerCase()
     let filteredData = []
 
     for (let item of data.slice()) {
-      if (item.arcana.toLowerCase().search(filterText) >= 0 ||
-          item.persona.toLowerCase().search(filterText) >= 0 ||
-          item.itemization.toLowerCase().search(filterText) >= 0 ||
-          item.category.toLowerCase().search(filterText) >= 0) {
+      if (item.persona.toLowerCase().search(filterText) >= 0) {
         filteredData.push(item)
       }
     }
@@ -94,7 +92,7 @@ class Table extends React.Component {
   render () {
     return (
       <table className='table'>
-        <TableHeader clickHandler={this.setSortingColumn} />
+        <TableHeader columns={this.props.columns} clickHandler={this.setSortingColumn} />
         <TableBody data={this.state.data} />
       </table>
     )

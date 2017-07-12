@@ -1,28 +1,40 @@
 import React from 'react'
 
 class TableHeader extends React.Component {
-  renderSortableColumn (column) {
-    const className = 'table-header sortable'
-    const clickHandler = this.props.clickHandler
+  renderColumn (column, index) {
+    let className = 'table-header'
+    if (column.hideOnMobile) {
+      className += ' mobile-hidden'
+    }
+    if (column.isSortable) {
+      className += ' sortable'
+    }
+
+    const label = column.label
+
+    const clickHandler = (column.isSortable)
+      ? this.props.clickHandler
+      : () => {}
 
     return (
-      <th className={className} onClick={() => clickHandler(column)}>
-        {column}
+      <th
+        key={index}
+        className={className}
+        onClick={() => clickHandler(label)}
+      >{label}
       </th>
     )
   }
 
   render () {
+    const columns = this.props.columns.map(
+      (column, index) => this.renderColumn(column, index)
+    )
+
     return (
       <thead className='table-header'>
         <tr className='table-header'>
-          {this.renderSortableColumn('arcana')}
-          {this.renderSortableColumn('persona')}
-          {this.renderSortableColumn('level')}
-          {this.renderSortableColumn('itemization')}
-          {this.renderSortableColumn('category')}
-          <th className='table-header mobile-hidden'>description</th>
-          <th className='table-header'>cost</th>
+          {columns}
         </tr>
       </thead>
     )

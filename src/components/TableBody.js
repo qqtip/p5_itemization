@@ -23,7 +23,6 @@ class TableBody extends React.Component {
   render () {
     const rows = this.props.data.map((item, index) => {
       const isOdd = (index % 2 === 0)
-
       return <TableRow key={index} item={item} isOdd={isOdd} />
     })
 
