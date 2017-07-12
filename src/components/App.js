@@ -1,12 +1,28 @@
 import React from 'react'
-import SearchBar from './SearchBar.js'
 import Table from './Table.js'
+
+class SearchBar extends React.Component {
+  render () {
+    const changeHandler = this.props.changeHandler
+
+    return (
+      <input id='search-bar'
+        className='search'
+        placeholder='Search'
+        onChange={changeHandler}
+      />
+    )
+  }
+}
 
 class App extends React.Component {
   constructor () {
     super()
 
-    this.state = {searchTerm: ''}
+    this.state = {
+      table: 'itemization',
+      searchTerm: ''
+    }
   }
 
   filterSearch (event) {
@@ -21,7 +37,7 @@ class App extends React.Component {
         </div>
 
         <div className='table-container'>
-          <SearchBar onChange={this.filterSearch.bind(this)} />
+          <SearchBar changeHandler={this.filterSearch.bind(this)} />
           <Table searchTerm={this.state.searchTerm} />
         </div>
       </div>
