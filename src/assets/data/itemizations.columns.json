@@ -1,0 +1,36 @@
+[
+  {
+    "label": "arcana",
+    "isSortable": true,
+    "sortType": "lexicographic",
+    "hideOnMobile": false
+  }, {
+    "label": "persona",
+    "isSortable": true,
+    "sortType": "lexicographic",
+    "hideOnMobile": false
+  }, {
+    "label": "level",
+    "isSortable": true,
+    "sortType": "numeric",
+    "hideOnMobile": false
+  }, {
+    "label": "itemization",
+    "isSortable": true,
+    "sortType": "lexicographic",
+    "hideOnMobile": false
+  }, {
+    "label": "category",
+    "isSortable": true,
+    "sortType": "lexicographic",
+    "hideOnMobile": false
+  }, {
+    "label": "description",
+    "isSortable": false,
+    "hideOnMobile": true
+  }, {
+    "label": "cost",
+    "isSortable": false,
+    "hideOnMobile": false
+  }
+]
