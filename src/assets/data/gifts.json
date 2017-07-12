@@ -1,0 +1,269 @@
+[
+  {
+    "name": "Uji Matcha Flan",
+    "confidants": {
+      "Lovers": 3,
+      "Star": 2,
+      "Devil": 2
+    },
+    "location": "Underground Mall (Supermarket)",
+    "price": 2400
+  },
+  {
+    "name": "Chocolate Truffles",
+    "confidants": {
+      "Empress": 3,
+      "Temperance": 3,
+      "Lovers": 3,
+      "Death": 2
+    },
+    "location": "Underground Mall (Supermarket)",
+    "price": 2800
+  },
+  {
+    "name": "Castella",
+    "confidants": {
+      "Lovers": 3,
+      "Fortune": 2,
+      "Death": 2,
+      "Temperance": 2
+    },
+    "location": "Underground Mall (Supermarket)",
+    "price": 1500
+  },
+  {
+    "name": "Mini Cactus",
+    "confidants": {
+      "Priestess": 3,
+      "Death": 3,
+      "Empress": 2,
+      "Devil": 2
+    },
+    "location": "Underground Mall (Flower Shop)",
+    "price": 1600
+  },
+  {
+    "name": "Designer Perfume",
+    "confidants": {
+      "Priestess": 3,
+      "Temperance": 2,
+      "Lovers": 2
+    },
+    "location": "Underground Mall (Cosmetics Store)",
+    "price": 7800
+  },
+  {
+    "name": "Incense Set",
+    "confidants": {
+      "Star": 3,
+      "Temperance": 2
+    },
+    "location": "Underground Mall (Cosmetics Store)",
+    "price": 3800
+  },
+  {
+    "name": "Crimson Lipstick",
+    "confidants": {
+      "Temperance": 3,
+      "Lovers": 3
+    },
+    "location": "Underground Mall (Cosmetics Store)",
+    "price": 6000
+  },
+  {
+    "name": "Rakugo Collection",
+    "confidants": {
+      "Star": 3,
+      "Devil": 2,
+      "Temperance": 2
+    },
+    "location": "Underground Mall (Music Store)",
+    "price": 3000
+  },
+  {
+    "name": "Classical Hits",
+    "confidants": {
+      "Priestess": 3,
+      "Death": 3,
+      "Devil": 3,
+      "Fortune": 2
+    },
+    "location": "Underground Mall (Music Store)",
+    "price": 3000
+  },
+  {
+    "name": "Best of KGB49",
+    "confidants": {
+      "Hermit": 3,
+      "Temperance": 3,
+      "Lovers": 2
+    },
+    "location": "Underground Mall (Music Store)",
+    "price": 3000
+  },
+  {
+    "name": "Book Cover",
+    "confidants": {
+      "Priestess": 3,
+      "Empress": 3,
+      "Star": 2,
+      "Fortune": 2
+    },
+    "location": "Underground Mall (Jap. Sundries Shop)",
+    "price": 3000
+  },
+  {
+    "name": "Glass Vase",
+    "confidants": {
+      "Empress": 3,
+      "Star": 2,
+      "Fortune": 2
+    },
+    "location": "Underground Mall (Jap. Sundries Shop)",
+    "price": 3200
+  },
+  {
+    "name": "Sakura Fan",
+    "confidants": {
+      "Star": 3,
+      "Devil": 2
+    },
+    "location": "Underground Mall (Jap. Sundries Shop)",
+    "price": 4800
+  },
+  {
+    "name": "Heart Ring",
+    "confidants": {
+      "Priestess": 3,
+      "Empress": 3,
+      "Hermit": 3,
+      "Temperance": 3,
+      "Lovers": 3
+    },
+    "location": "Underground Mall (Jewelry Store)",
+    "price": 88000
+  },
+  {
+    "name": "Heart Necklace",
+    "confidants": {
+      "Priestess": 3,
+      "Empress": 3,
+      "Hermit": 3,
+      "Temperance": 3
+    },
+    "location": "Underground Mall (Jewelry Store)",
+    "price": 68000
+  },
+  {
+    "name": "Black Mug",
+    "confidants": {
+      "Priestess": 3,
+      "Star": 3,
+      "Death": 3,
+      "Devil": 3
+    },
+    "location": "Shinjuku (General Store)",
+    "price": 1800
+  },
+  {
+    "name": "Star Mirror",
+    "confidants": {
+      "Fortune": 3,
+      "Temperance": 3,
+      "Lovers": 3
+    },
+    "location": "Shinjuku (General Store)",
+    "price": 4000
+  },
+  {
+    "name": "Fountain Pen",
+    "confidants": {
+      "Priestess": 3,
+      "Star": 3,
+      "Devil": 3
+    },
+    "location": "Shinjuku (General Store)",
+    "price": 8000
+  },
+  {
+    "name": "Flower Basket",
+    "confidants": {
+      "Priestess": 3,
+      "Empress": 3,
+      "Fortune": 3
+    },
+    "location": "Shinjuku at night (Flower Shop)",
+    "price": 2400
+  },
+  {
+    "name": "Rose Bouquet",
+    "confidants": {
+      "Priestess": 3,
+      "Lovers": 3,
+      "Empress": 2
+    },
+    "location": "Shinjuku at night (Flower Shop)",
+    "price": 3200
+  },
+  {
+    "name": "Motorbike Figure",
+    "confidants": {
+      "Priestess": 3,
+      "Hermit": 3
+    },
+    "location": "Akihabara (Otaku Goods Shop)",
+    "price": 4800
+  },
+  {
+    "name": "Local Mascot Set",
+    "confidants": {
+      "Fortune": 3,
+      "Hermit": 3,
+      "Empress": 2
+    },
+    "location": "Akihabara (Otaku Goods Shop)",
+    "price": 3600
+  },
+  {
+    "name": "Idol Pins",
+    "confidants": {
+      "Temperance": 3
+    },
+    "location": "Akihabara (Otaku Goods Shop)",
+    "price": 3000
+  },
+  {
+    "name": "Robot Vacuum",
+    "confidants": {
+      "Temperance": 3,
+      "Hermit": 2
+    },
+    "location": "Akihabara (Electronics Superstore)",
+    "price": 44800
+  },
+  {
+    "name": "Digital Camera",
+    "confidants": {
+      "Devil": 3
+    },
+    "location": "Akihabara (Electronics Superstore)",
+    "price": 39800
+  },
+  {
+    "name": "Face Beautifier",
+    "confidants": {
+      "Lovers": 3
+    },
+    "location": "Akihabara (Electronics Superstore)",
+    "price": 9800
+  },
+  {
+    "name": "Snack Pack",
+    "confidants": {
+      "Hermit": 3,
+      "Empress": 2
+    },
+    "location": "Shibuya Central Street (Rocinante)",
+    "price": 5800
+  }
+]

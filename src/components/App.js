@@ -1,5 +1,5 @@
 import React from 'react'
-import TableContainer from './components/TableContainer.js'
+import TableContainer from './TableContainer.js'
 
 class App extends React.Component {
   render () {

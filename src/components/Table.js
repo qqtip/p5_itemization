@@ -14,38 +14,30 @@ class Table extends React.Component {
     this.sortReverse = false
     this.setSortingColumn = this.setSortingColumn.bind(this)
 
-    const data = this.filter('')
+    const data = this.completeData()
     this.state = { data: data }
   }
 
+  completeData () {
+    return require('../assets/data/itemizations.json')
+  }
+
+  /* update data when this Table receives a new search term */
   componentWillReceiveProps (newProps) {
-    // filter then sort data
+    // filter data by the new search term then sort by column
     this.setState({data:
       this.sort(
-        this.filter(newProps.searchTerm.toLowerCase())
+        this.filter(
+          this.completeData(),
+          newProps.searchTerm.toLowerCase()
+        )
       )
     })
   }
 
+  /* initialize the table header to stick when scrolling */
   componentDidMount () {
-    // initialize the table header to stick when scrolling
     jquery('table.table').stickyTableHeaders()
-  }
-
-  filter (filterText) {
-    const completeData = require('../assets/data/rows.json')
-    let data = []
-
-    for (let item of completeData.slice()) {
-      if (item.arcana.toLowerCase().search(filterText) >= 0 ||
-          item.persona.toLowerCase().search(filterText) >= 0 ||
-          item.itemization.toLowerCase().search(filterText) >= 0 ||
-          item.category.toLowerCase().search(filterText) >= 0) {
-        data.push(item)
-      }
-    }
-
-    return data
   }
 
   setSortingColumn (column) {
@@ -58,11 +50,10 @@ class Table extends React.Component {
       this.sortedReverse = false
     }
 
-    this.setState({data:
-      this.sort(this.state.data)
-    })
+    this.setState({data: this.sort(this.state.data)})
   }
 
+  /* sorts the given data by the current sorting column */
   sort (data) {
     const sortColumn = this.sortColumn
     let newData = data.slice()
@@ -84,10 +75,26 @@ class Table extends React.Component {
     return newData
   }
 
+  /* filters the given data filtered by the given text and returns it */
+  filter (data, filterText) {
+    let filteredData = []
+
+    for (let item of data.slice()) {
+      if (item.arcana.toLowerCase().search(filterText) >= 0 ||
+          item.persona.toLowerCase().search(filterText) >= 0 ||
+          item.itemization.toLowerCase().search(filterText) >= 0 ||
+          item.category.toLowerCase().search(filterText) >= 0) {
+        filteredData.push(item)
+      }
+    }
+
+    return filteredData
+  }
+
   render () {
     return (
       <table className='table'>
-        <TableHeader onClick={this.setSortingColumn} />
+        <TableHeader clickHandler={this.setSortingColumn} />
         <TableBody data={this.state.data} />
       </table>
     )
