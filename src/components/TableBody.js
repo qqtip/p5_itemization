@@ -22,9 +22,12 @@ class TableRow extends React.Component {
 
     const item = this.props.item
     const label = column.label
+    const data = Array.isArray(item[label])
+      ? item[label].join(', ')
+      : item[label]
 
     return (
-      <td key={index} className={classes.join(' ')}>{item[label]}</td>
+      <td key={index} className={classes.join(' ')}>{data}</td>
     )
   }
 
@@ -44,14 +47,13 @@ class TableBody extends React.Component {
   // data
 
   render () {
+    const columns = this.props.columns
     const rows = this.props.data.map(
       (item, index) => {
         return (
           <TableRow
-            key={index}
-            columns={this.props.columns}
-            item={item}
-            isOdd={index % 2 === 0}
+            key={index} columns={columns}
+            item={item} isOdd={index % 2 === 0}
           />
         )
       }
