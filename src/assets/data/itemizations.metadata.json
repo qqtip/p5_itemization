@@ -1,0 +1,46 @@
+{
+  "columns": [
+    {
+      "label": "arcana",
+      "isSortable": true,
+      "ordering": "lexicographic",
+      "isSearchable": true,
+      "hideOnMobile": false
+    }, {
+      "label": "persona",
+      "isSortable": true,
+      "ordering": "lexicographic",
+      "isSearchable": true,
+      "hideOnMobile": false
+    }, {
+      "label": "level",
+      "isSortable": true,
+      "ordering": "numeric",
+      "isSearchable": false,
+      "hideOnMobile": false
+    }, {
+      "label": "itemization",
+      "isSortable": true,
+      "ordering": "lexicographic",
+      "isSearchable": true,
+      "hideOnMobile": false
+    }, {
+      "label": "category",
+      "isSortable": true,
+      "ordering": "lexicographic",
+      "isSearchable": true,
+      "hideOnMobile": false
+    }, {
+      "label": "description",
+      "isSortable": false,
+      "isSearchable": false,
+      "hideOnMobile": true
+    }, {
+      "label": "cost",
+      "isSortable": false,
+      "isSearchable": false,
+      "hideOnMobile": false
+    }
+  ],
+  "defaultSortColumnIndex": 0
+}

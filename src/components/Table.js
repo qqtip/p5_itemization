@@ -5,23 +5,27 @@ import jquery from 'jquery'
 
 class Table extends React.Component {
   /* props */
-  // columns
   // data
+  // metadata
+  //  columns
+  //  default sort column
   // searchTerm
 
   constructor (props) {
     super()
 
-    this.sortColumn = 'arcana'
+    const sortColumnIndex = props.metadata.defaultSortColumnIndex
+    this.sortColumn = props.metadata.columns[sortColumnIndex]
     this.sortReverse = false
     this.setSortingColumn = this.setSortingColumn.bind(this)
 
-    const data = this.filter(props.data.slice(), props.searchTerm)
+    const data = props.data.slice()
     this.state = { data: data }
   }
 
   /* update data when this Table receives a new search term */
   componentWillReceiveProps (newProps) {
+    console.log('please call this')
     // filter data by the new search term then sort by column
     this.setState({data:
       this.sort(
@@ -55,20 +59,21 @@ class Table extends React.Component {
 
   /* sorts the given data by the current sorting column */
   sort (data) {
-    const sortColumn = this.sortColumn
+    const ordering = this.sortColumn.ordering
+    const label = this.sortColumn.label
+    const reverse = this.sortReverse
     let newData = data.slice()
 
     newData.sort((a, b) => {
-      // sort numerically for level column
-      if (sortColumn === 'level') {
-        return (this.sortReverse)
-          ? b[sortColumn] - a[sortColumn]
-          : a[sortColumn] - b[sortColumn]
-      // sort lexicographically for other columns
-      } else {
-        return (this.sortReverse)
-          ? b[sortColumn].localeCompare(a[sortColumn])
-          : a[sortColumn].localeCompare(b[sortColumn])
+      switch (ordering) {
+        case 'lexicographic': default:
+          return (reverse)
+            ? b[label].localeCompare(a[label])
+            : a[label].localeCompare(b[label])
+        case 'numeric':
+          return (reverse)
+            ? b[label] - a[label]
+            : a[label] - b[label]
       }
     })
 
@@ -77,12 +82,18 @@ class Table extends React.Component {
 
   /* filters the given data filtered by the given text and returns it */
   filter (data, filterText) {
+    const columns = this.props.metadata.columns
+
     filterText = filterText.toLowerCase()
     let filteredData = []
 
     for (let item of data.slice()) {
-      if (item.persona.toLowerCase().search(filterText) >= 0) {
-        filteredData.push(item)
+      for (let field of columns) {
+        if (field.isSearchable &&
+            item[field.label].toLowerCase().search(filterText) >= 0) {
+          filteredData.push(item)
+          break
+        }
       }
     }
 
@@ -90,10 +101,12 @@ class Table extends React.Component {
   }
 
   render () {
+    const columns = this.props.metadata.columns
+
     return (
       <table className='table'>
-        <TableHeader columns={this.props.columns} clickHandler={this.setSortingColumn} />
-        <TableBody data={this.state.data} />
+        <TableHeader columns={columns} clickHandler={this.setSortingColumn} />
+        <TableBody columns={columns} data={this.state.data} />
       </table>
     )
   }

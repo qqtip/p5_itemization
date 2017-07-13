@@ -1,9 +1,10 @@
 import React from 'react'
 import Table from './Table.js'
 
-class ItemizationTable extends Table {
-
-}
+import ITEMIZATION_DATA from '../assets/data/itemizations.data.json'
+import ITEMIZATION_META from '../assets/data/itemizations.metadata.json'
+import GIFT_DATA from '../assets/data/gifts.data.json'
+import GIFT_META from '../assets/data/gifts.metadata.json'
 
 class SearchBar extends React.Component {
   render () {
@@ -24,7 +25,7 @@ class App extends React.Component {
     super()
 
     this.state = {
-      table: 'itemization',
+      table: 'gift',
       searchTerm: ''
     }
   }
@@ -34,17 +35,33 @@ class App extends React.Component {
   }
 
   renderTable () {
-    // column label should map to a field in an instance of data
-    const columns = require('../assets/data/itemizations.columns.json')
-    const data = require('../assets/data/itemizations.json')
+    const table = this.state.table
 
-    return <Table columns={columns} data={data} searchTerm={this.state.searchTerm} />
-      // return <ItemizationTable searchTerm={this.state.searchTerm} />
+    const data = () => {
+      switch (table) {
+        case 'itemization': default:
+          return ITEMIZATION_DATA
+        case 'gift':
+          return GIFT_DATA
+      }
+    }
 
-      // switch (this.state.table) {
-      //   case 'itemization':
-      //     return <ItemizationTable searchTerm={this.state.searchTerm} />
-      // }
+    const metadata = () => {
+      switch (table) {
+        case 'itemization': default:
+          return ITEMIZATION_META
+        case 'gift':
+          return GIFT_META
+      }
+    }
+
+    return (
+      <Table
+        data={data()}
+        metadata={metadata()}
+        searchTerm={this.state.searchTerm}
+      />
+    )
   }
 
   render () {

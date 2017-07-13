@@ -1,13 +1,17 @@
 import React from 'react'
 
 class TableHeader extends React.Component {
+  /* props */
+  // columns
+  // clickHandler
+
   renderColumn (column, index) {
-    let className = 'table-header'
+    let classes = ['table-header']
     if (column.hideOnMobile) {
-      className += ' mobile-hidden'
+      classes.push('mobile-hidden')
     }
     if (column.isSortable) {
-      className += ' sortable'
+      classes.push('sortable')
     }
 
     const label = column.label
@@ -19,8 +23,8 @@ class TableHeader extends React.Component {
     return (
       <th
         key={index}
-        className={className}
-        onClick={() => clickHandler(label)}
+        className={classes.join(' ')}
+        onClick={() => clickHandler(column)}
       >{label}
       </th>
     )
