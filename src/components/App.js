@@ -25,7 +25,7 @@ class App extends React.Component {
     super()
 
     this.state = {
-      table: 'gift',
+      table: 'itemization',
       searchTerm: ''
     }
   }
