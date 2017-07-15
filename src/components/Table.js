@@ -83,35 +83,29 @@ class Table extends React.Component {
   filter (data, filterText) {
     const columns = this.props.metadata.columns
 
-    let filteredData = []
-
-    // for each item, check each searchable column
-    for (let item of data.slice()) {
+    return data.slice().filter((item) => {
+      // check each column for the search term
       for (let column of columns) {
-        if (column.isSearchable) {
-          const field = column.label
-          // generate a searchable string depending on the type of data
-          const searchText = (() => {
-            switch (column.dataType) {
-              case 'string': default:
-                return item[field]
-              case 'array':
-                return item[field].join(' ')
-              case 'number':
-                return String(item[field])
-            }
-          })().toLowerCase()
-
-          // add each matching item to a new array
-          if (searchText.search(filterText.toLowerCase()) >= 0) {
-            filteredData.push(item)
-            break
+        const field = column.label
+        // determine the search text based on data type
+        const searchText = (() => {
+          switch (column.dataType) {
+            case 'string': default:
+              return item[field]
+            case 'array':
+              return item[field].join(' ')
+            case 'number':
+              return String(item[field])
           }
+        })().toLowerCase()
+        // include the current if a field matches
+        if (column.isSearchable && searchText.indexOf(filterText) > -1) {
+          return true
         }
       }
-    }
-
-    return filteredData
+      // filter items with no matching fields
+      return false
+    })
   }
 
   render () {
