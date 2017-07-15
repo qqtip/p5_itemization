@@ -1,11 +1,11 @@
 {
-  "name": "persona5_itemization",
-  "version": "1.0.2",
+  "name": "persona5_items",
+  "version": "1.1.2",
   "private": true,
-  "homepage": "https://quan.github.io/persona5_itemization",
+  "homepage": "https://quan.github.io/persona5_items",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quan/persona5_itemization.git"
+    "url": "https://github.com/quan/persona5_items.git"
   },
   "dependencies": {
     "jquery": "^3.2.1",
