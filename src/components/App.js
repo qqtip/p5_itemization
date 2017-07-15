@@ -26,7 +26,7 @@ class App extends React.Component {
 
     /* table options: 'itemization', 'gift' */
     this.state = {
-      table: 'gift',
+      table: 'itemization',
       searchTerm: ''
     }
   }
@@ -38,28 +38,28 @@ class App extends React.Component {
   renderTable () {
     const table = this.state.table
 
-    const data = () => {
+    const data = (() => {
       switch (table) {
         case 'itemization': default:
           return ITEMIZATION_DATA
         case 'gift':
           return GIFT_DATA
       }
-    }
+    })()
 
-    const metadata = () => {
+    const metadata = (() => {
       switch (table) {
         case 'itemization': default:
           return ITEMIZATION_META
         case 'gift':
           return GIFT_META
       }
-    }
+    })()
 
     return (
       <Table
-        data={data()}
-        metadata={metadata()}
+        data={data}
+        metadata={metadata}
         searchTerm={this.state.searchTerm}
       />
     )

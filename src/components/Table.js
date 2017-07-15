@@ -25,7 +25,6 @@ class Table extends React.Component {
 
   /* update data when this Table receives a new search term */
   componentWillReceiveProps (newProps) {
-    console.log('please call this')
     // filter data by the new search term then sort by column
     this.setState({data:
       this.sort(
@@ -59,18 +58,18 @@ class Table extends React.Component {
 
   /* sorts the given data by the current sorting column */
   sort (data) {
-    const ordering = this.sortColumn.ordering
+    const dataType = this.sortColumn.dataType
     const label = this.sortColumn.label
     const reverse = this.sortReverse
     let newData = data.slice()
 
     newData.sort((a, b) => {
-      switch (ordering) {
-        case 'lexicographic': default:
+      switch (dataType) {
+        case 'string': default:
           return (reverse)
             ? b[label].localeCompare(a[label])
             : a[label].localeCompare(b[label])
-        case 'numeric':
+        case 'number':
           return (reverse)
             ? b[label] - a[label]
             : a[label] - b[label]
@@ -84,15 +83,30 @@ class Table extends React.Component {
   filter (data, filterText) {
     const columns = this.props.metadata.columns
 
-    filterText = filterText.toLowerCase()
     let filteredData = []
 
+    // for each item, check each searchable column
     for (let item of data.slice()) {
-      for (let field of columns) {
-        if (field.isSearchable &&
-            item[field.label].toLowerCase().search(filterText) >= 0) {
-          filteredData.push(item)
-          break
+      for (let column of columns) {
+        if (column.isSearchable) {
+          const field = column.label
+          // generate a searchable string depending on the type of data
+          const searchText = (() => {
+            switch (column.dataType) {
+              case 'string': default:
+                return item[field]
+              case 'array':
+                return item[field].join(' ')
+              case 'number':
+                return String(item[field])
+            }
+          })().toLowerCase()
+
+          // add each matching item to a new array
+          if (searchText.search(filterText.toLowerCase()) >= 0) {
+            filteredData.push(item)
+            break
+          }
         }
       }
     }
