@@ -24,8 +24,9 @@ class App extends React.Component {
   constructor () {
     super()
 
+    /* table options: 'itemization', 'gift' */
     this.state = {
-      table: 'itemization',
+      table: 'gift',
       searchTerm: ''
     }
   }
