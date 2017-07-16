@@ -22,31 +22,53 @@ class App extends React.Component {
 
     this.tables = [
       'itemization',
-      'gifts'
+      'gift'
     ]
 
     this.state = {
       table: this.tables[0],
-      searchTerm: ''
+      searchString: ''
     }
   }
 
   setFilter (event) {
-    this.setState({searchTerm: event.target.value})
+    this.setState({searchString: event.target.value})
+  }
+
+  setTable (table) {
+    this.setState({table: table})
+  }
+
+  renderNav () {
+    const currentTable = this.state.table
+
+    const navLinks = this.tables.map((name, index) => {
+      const link = name.charAt(0).toUpperCase() + name.slice(1) + 's'
+      let classes = ['navigation', 'nav-link']
+
+      if (name === currentTable) {
+        classes.push('current')
+        return <a key={index} className={classes.join(' ')}>{link}</a>
+      } else {
+        const changeHandler = () => this.setState({table: name})
+        return <a key={index} className={classes.join(' ')} href='' onClick={changeHandler}>{link}</a>
+      }
+    })
+
+    return (
+      <p className='navigation'>
+        {navLinks.reduce((prev, curr) => [prev, ' - ', curr])}
+      </p>
+    )
   }
 
   renderTable () {
     const table = this.state.table
     const data = MockAPI.getData(table)
     const metadata = MockAPI.getMetadata(table)
+    const searchString = this.state.searchString
 
-    return (
-      <Table
-        data={data}
-        metadata={metadata}
-        searchTerm={this.state.searchTerm}
-      />
-    )
+    return <Table data={data} metadata={metadata} searchString={searchString} />
   }
 
   render () {
@@ -56,6 +78,7 @@ class App extends React.Component {
       <div className='App'>
         <div className='app-header'>
           <h2 className='title'>Persona 5: Items</h2>
+          {this.renderNav()}
         </div>
 
         <div className='table-container'>

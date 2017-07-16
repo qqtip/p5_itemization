@@ -9,40 +9,63 @@ class Table extends React.Component {
   // metadata
   //  columns
   //  default sort column
-  // searchTerm
+  // searchString
 
   constructor (props) {
     super()
 
-    const sortColumnIndex = props.metadata.defaultSortColumnIndex
-    this.sortColumn = props.metadata.columns[sortColumnIndex]
-    this.sortReverse = false
-    this.setSortingColumn = this.setSortingColumn.bind(this)
+    window.$ = window.jQuery = jquery
+    require('sticky-table-headers')
 
-    const data = props.data.slice()
-    this.state = { data: data }
+    this.componentDidMount = this.initTableHeader
+    this.componentDidUpdate = this.reinitTableHeader
+    this.componentWillReceiveProps = this.checkProps
+
+    this.setSortingColumn = this.setSortingColumn.bind(this)
+    this.initTable(props)
   }
 
-  /* update data when this Table receives a new search term */
-  componentWillReceiveProps (newProps) {
-    // filter data by the new search term then sort by column
-    this.setState({data:
-      this.sort(
-        this.filter(
-          this.props.data.slice(),
-          newProps.searchTerm
-        )
-      )
-    })
+  /* prepares data for mounting or changing the table */
+  initTable (props) {
+    const sortColumnIndex = props.metadata.defaultSortColumnIndex
+    const columns = props.metadata.columns
+
+    this.sortColumn = columns[sortColumnIndex]
+    this.sortReverse = false
+
+    this.state = { data: this.filter(props.data, columns, props.searchString) }
   }
 
   /* initialize the table header to stick when scrolling */
-  componentDidMount () {
-    window.$ = window.jQuery = jquery
-    require('sticky-table-headers')
+  initTableHeader () {
     jquery('table.table').stickyTableHeaders()
   }
 
+  /* reset sticky table header on table change */
+  reinitTableHeader () {
+    jquery('table.table').stickyTableHeaders('destroy')
+    this.initTableHeader()
+  }
+
+  checkProps (newProps) {
+    // reinitialize the table if the table was switched
+    if (this.props.metadata !== newProps.metadata) {
+      this.initTable(newProps)
+    // otherwise re-filter with the new search string
+    } else {
+      this.setState({data:
+        this.sort(
+          this.filter(
+            newProps.data.slice(),
+            newProps.metadata.columns,
+            newProps.searchString
+          )
+        )
+      })
+    }
+  }
+
+  /* a handler for column header clicks */
   setSortingColumn (column) {
     // reverse sorting order if the same column is selected
     if (this.sortColumn === column) {
@@ -79,15 +102,18 @@ class Table extends React.Component {
     return newData
   }
 
-  /* filters the given data filtered by the given text and returns it */
-  filter (data, filterText) {
-    const columns = this.props.metadata.columns
-
+  /**
+   * Filters an array of data by a search string.
+   * data       : an array of data
+   * columns    : an array containing column metadata
+   * filterText : a search string
+   */
+  filter (data, columns, filterText) {
     return data.slice().filter((item) => {
       // check each column for the search term
       for (let column of columns) {
         const field = column.label
-        // determine the search text based on data type
+        // convert value to searchable string
         const searchText = (() => {
           switch (column.dataType) {
             case 'string': default:
@@ -98,7 +124,8 @@ class Table extends React.Component {
               return String(item[field])
           }
         })().toLowerCase()
-        // include the current if a field matches
+        // include the current item if matched
+        filterText = filterText.toLowerCase()
         if (column.isSearchable && searchText.indexOf(filterText) > -1) {
           return true
         }
@@ -110,11 +137,13 @@ class Table extends React.Component {
 
   render () {
     const columns = this.props.metadata.columns
+    const clickHandler = this.setSortingColumn
+    const data = this.state.data
 
     return (
       <table className='table'>
-        <TableHeader columns={columns} clickHandler={this.setSortingColumn} />
-        <TableBody columns={columns} data={this.state.data} />
+        <TableHeader columns={columns} clickHandler={clickHandler} />
+        <TableBody columns={columns} data={data} />
       </table>
     )
   }

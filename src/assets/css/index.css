@@ -11,6 +11,9 @@ div.app-header {
 div.app-header h2.title {
   text-align: center;
 }
+div.app-header p.navigation {
+  text-align: center;
+}
 
 /* search bar */
 input.search {
