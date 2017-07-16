@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
+    "json-loader": "^0.5.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "sticky-table-headers": "^0.1.19"
