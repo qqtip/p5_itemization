@@ -1,10 +1,6 @@
 import React from 'react'
 import Table from './Table.js'
-
-import ITEMIZATION_DATA from '../assets/data/itemizations.data.json'
-import ITEMIZATION_META from '../assets/data/itemizations.metadata.json'
-import GIFT_DATA from '../assets/data/gifts.data.json'
-import GIFT_META from '../assets/data/gifts.metadata.json'
+import MockAPI from '../utils/MockAPI.js'
 
 class SearchBar extends React.Component {
   render () {
@@ -24,37 +20,25 @@ class App extends React.Component {
   constructor () {
     super()
 
-    /* table options: 'itemization', 'gift' */
+    this.tables = [
+      'itemization',
+      'gifts'
+    ]
+
     this.state = {
-      table: 'itemization',
+      table: this.tables[0],
       searchTerm: ''
     }
   }
 
-  filterSearch (event) {
+  setFilter (event) {
     this.setState({searchTerm: event.target.value})
   }
 
   renderTable () {
     const table = this.state.table
-
-    const data = (() => {
-      switch (table) {
-        case 'itemization': default:
-          return ITEMIZATION_DATA
-        case 'gift':
-          return GIFT_DATA
-      }
-    })()
-
-    const metadata = (() => {
-      switch (table) {
-        case 'itemization': default:
-          return ITEMIZATION_META
-        case 'gift':
-          return GIFT_META
-      }
-    })()
+    const data = MockAPI.getData(table)
+    const metadata = MockAPI.getMetadata(table)
 
     return (
       <Table
@@ -66,6 +50,8 @@ class App extends React.Component {
   }
 
   render () {
+    const changeHandler = this.setFilter.bind(this)
+
     return (
       <div className='App'>
         <div className='app-header'>
@@ -73,7 +59,7 @@ class App extends React.Component {
         </div>
 
         <div className='table-container'>
-          <SearchBar changeHandler={this.filterSearch.bind(this)} />
+          <SearchBar changeHandler={changeHandler} />
           {this.renderTable()}
         </div>
       </div>
