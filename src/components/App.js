@@ -1,10 +1,6 @@
 import React from 'react'
 import Table from './Table.js'
-
-import ITEMIZATION_DATA from '../assets/data/itemizations.data.json'
-import ITEMIZATION_META from '../assets/data/itemizations.metadata.json'
-import GIFT_DATA from '../assets/data/gifts.data.json'
-import GIFT_META from '../assets/data/gifts.metadata.json'
+import MockAPI from '../utils/MockAPI.js'
 
 class SearchBar extends React.Component {
   render () {
@@ -24,55 +20,69 @@ class App extends React.Component {
   constructor () {
     super()
 
+    this.tables = [
+      'itemization',
+      'gift'
+    ]
+
     this.state = {
-      table: 'itemization',
-      searchTerm: ''
+      table: this.tables[0],
+      searchString: ''
     }
   }
 
-  filterSearch (event) {
-    this.setState({searchTerm: event.target.value})
+  setFilter (event) {
+    this.setState({searchString: event.target.value})
+  }
+
+  setTable (table) {
+    this.setState({table: table})
+  }
+
+  renderNav () {
+    const currentTable = this.state.table
+
+    const navLinks = this.tables.map((name, index) => {
+      const link = name.charAt(0).toUpperCase() + name.slice(1) + 's'
+      let classes = ['navigation', 'nav-link']
+
+      if (name === currentTable) {
+        classes.push('current')
+        return <a key={index} className={classes.join(' ')}>{link}</a>
+      } else {
+        const changeHandler = () => this.setState({table: name})
+        return <a key={index} className={classes.join(' ')} href='' onClick={changeHandler}>{link}</a>
+      }
+    })
+
+    return (
+      <div className='navigation'>
+        {navLinks.reduce((prev, curr) => [prev, ' - ', curr])}
+      </div>
+    )
   }
 
   renderTable () {
     const table = this.state.table
+    const data = MockAPI.getData(table)
+    const metadata = MockAPI.getMetadata(table)
+    const searchString = this.state.searchString
 
-    const data = () => {
-      switch (table) {
-        case 'itemization': default:
-          return ITEMIZATION_DATA
-        case 'gift':
-          return GIFT_DATA
-      }
-    }
-
-    const metadata = () => {
-      switch (table) {
-        case 'itemization': default:
-          return ITEMIZATION_META
-        case 'gift':
-          return GIFT_META
-      }
-    }
-
-    return (
-      <Table
-        data={data()}
-        metadata={metadata()}
-        searchTerm={this.state.searchTerm}
-      />
-    )
+    return <Table data={data} metadata={metadata} searchString={searchString} />
   }
 
   render () {
+    const changeHandler = this.setFilter.bind(this)
+
     return (
       <div className='App'>
         <div className='app-header'>
-          <h2 className='title'>Persona 5: Items</h2>
+          <h2 className='title'>Persona 5 Item Lists</h2>
+          {this.renderNav()}
         </div>
 
         <div className='table-container'>
-          <SearchBar changeHandler={this.filterSearch.bind(this)} />
+          <SearchBar changeHandler={changeHandler} />
           {this.renderTable()}
         </div>
       </div>

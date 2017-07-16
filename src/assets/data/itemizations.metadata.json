@@ -2,41 +2,43 @@
   "columns": [
     {
       "label": "arcana",
+      "dataType": "string",
       "isSortable": true,
-      "ordering": "lexicographic",
       "isSearchable": true,
       "hideOnMobile": false
     }, {
       "label": "persona",
+      "dataType": "string",
       "isSortable": true,
-      "ordering": "lexicographic",
       "isSearchable": true,
       "hideOnMobile": false
     }, {
       "label": "level",
+      "dataType": "number",
       "isSortable": true,
-      "ordering": "numeric",
       "isSearchable": false,
       "hideOnMobile": false
     }, {
       "label": "itemization",
+      "dataType": "string",
       "isSortable": true,
-      "ordering": "lexicographic",
       "isSearchable": true,
       "hideOnMobile": false
     }, {
       "label": "category",
+      "dataType": "string",
       "isSortable": true,
-      "ordering": "lexicographic",
       "isSearchable": true,
       "hideOnMobile": false
     }, {
       "label": "description",
+      "dataType": "string",
       "isSortable": false,
-      "isSearchable": false,
+      "isSearchable": true,
       "hideOnMobile": true
     }, {
       "label": "cost",
+      "dataType": "number",
       "isSortable": false,
       "isSearchable": false,
       "hideOnMobile": false

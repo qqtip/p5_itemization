@@ -2,30 +2,32 @@
   "columns": [
     {
       "label": "name",
+      "dataType": "string",
       "isSortable": true,
-      "ordering": "lexicographic",
       "isSearchable": true,
       "hideOnMobile": false
     }, {
       "label": "confidants +3",
+      "dataType": "array",
       "isSortable": false,
       "isSearchable": true,
       "hideOnMobile": false
     }, {
       "label": "confidants +2",
+      "dataType": "array",
       "isSortable": false,
       "isSearchable": true,
       "hideOnMobile": false
     }, {
       "label": "location",
+      "dataType": "string",
       "isSortable": true,
-      "ordering": "lexicographic",
       "isSearchable": true,
       "hideOnMobile": false
     }, {
       "label": "price",
+      "dataType": "number",
       "isSortable": true,
-      "ordering": "numeric",
       "isSearchable": false,
       "hideOnMobile": false
     }
