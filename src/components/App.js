@@ -56,9 +56,9 @@ class App extends React.Component {
     })
 
     return (
-      <p className='navigation'>
+      <div className='navigation'>
         {navLinks.reduce((prev, curr) => [prev, ' - ', curr])}
-      </p>
+      </div>
     )
   }
 
@@ -77,7 +77,7 @@ class App extends React.Component {
     return (
       <div className='App'>
         <div className='app-header'>
-          <h2 className='title'>Persona 5: Items</h2>
+          <h2 className='title'>Persona 5 Item Lists</h2>
           {this.renderNav()}
         </div>
 

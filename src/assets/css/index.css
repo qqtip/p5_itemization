@@ -11,8 +11,22 @@ div.app-header {
 div.app-header h2.title {
   text-align: center;
 }
-div.app-header p.navigation {
+div.app-header div.navigation {
   text-align: center;
+}
+div.app-header a.navigation.nav-link {
+  text-decoration: none;
+}
+div.app-header a.navigation.nav-link:hover {
+  color: black;
+}
+div.app-header a.navigation.nav-link:visited {
+  color: black;
+}
+div.app-header a.navigation.nav-link.current {
+  color: black;
+  font-weight: bold;
+  cursor: default;
 }
 
 /* search bar */
