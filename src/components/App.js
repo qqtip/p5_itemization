@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Header.js'
 import Table from './Table.js'
 import MockAPI from '../utils/MockAPI.js'
 
@@ -39,29 +40,6 @@ class App extends React.Component {
     this.setState({table: table})
   }
 
-  renderNav () {
-    const currentTable = this.state.table
-
-    const navLinks = this.tables.map((name, index) => {
-      const link = name.charAt(0).toUpperCase() + name.slice(1) + 's'
-      let classes = ['navigation', 'nav-link']
-
-      if (name === currentTable) {
-        classes.push('current')
-        return <a key={index} className={classes.join(' ')}>{link}</a>
-      } else {
-        const changeHandler = () => this.setState({table: name})
-        return <a key={index} className={classes.join(' ')} href='' onClick={changeHandler}>{link}</a>
-      }
-    })
-
-    return (
-      <div className='navigation'>
-        {navLinks.reduce((prev, curr) => [prev, ' - ', curr])}
-      </div>
-    )
-  }
-
   renderTable () {
     const table = this.state.table
     const data = MockAPI.getData(table)
@@ -72,17 +50,16 @@ class App extends React.Component {
   }
 
   render () {
-    const changeHandler = this.setFilter.bind(this)
+    const setFilter = this.setFilter.bind(this)
+    const setTable = this.setTable.bind(this)
+    const table = this.state.table
 
     return (
       <div className='App'>
-        <div className='app-header'>
-          <h2 className='title'>Persona 5 Item Lists</h2>
-          {this.renderNav()}
-        </div>
+        <Header table={table} tables={this.tables} clickHandler={setTable}/>
 
         <div className='table-container'>
-          <SearchBar changeHandler={changeHandler} />
+          <SearchBar changeHandler={setFilter} />
           {this.renderTable()}
         </div>
       </div>
