@@ -6,7 +6,7 @@ class Header extends React.Component {
     const tables = this.props.tables
 
     const navLinks = tables.map((name, index) => {
-      const link = name.charAt(0).toUpperCase() + name.slice(1) + 's'
+      const link = name + 's'
       let classes = ['navigation', 'nav-link']
 
       if (name === currentTable) {
@@ -18,18 +18,22 @@ class Header extends React.Component {
       }
     })
 
-    return (
-      <div className='header-nav'>
-        {navLinks.reduce((prev, curr) => [prev, ' - ', curr])}
-      </div>
-    )
+    return <div className='header-nav'>{navLinks}</div>
   }
 
   render () {
+    const github = 'https://www.github.com/quan/persona5_items'
+    const target = '_BLANK'
+    const rel = 'noopener noreferrer'
+
     return (
       <div className='app-header'>
         <div className='header-title'>
-          <h2 className='title'>Persona 5 Items</h2>
+          <h2 className='title'>
+            <a href={github} target={target} rel={rel} className='uppercase'>
+              Persona 5 Items
+            </a>
+          </h2>
         </div>
         {this.renderNav()}
       </div>
