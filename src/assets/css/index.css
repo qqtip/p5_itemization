@@ -3,29 +3,40 @@ body {
   padding: 0;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 14px;
+  background-color: #262626;
 }
 
 div.app-header {
   width: 100%;
+  height: 40px;
+  padding: 5px 0;
+  color: white;
+  background-color: black;
+  border-bottom: 1px solid #4d0000;
 }
-div.app-header h2.title {
-  text-align: center;
+div.app-header div.header-title {
+  float: left;
+  line-height: 25px;
 }
-div.app-header div.navigation {
-  text-align: center;
+div.app-header div.header-title h2.title {
+  font-weight: normal;
+  margin: 7px 15px;
 }
-div.app-header a.navigation.nav-link {
+div.app-header div.header-nav {
+  float: right;
+  line-height: 25px;
+  margin: 7px 15px;
+}
+div.app-header div.header-nav a.navigation.nav-link {
   text-decoration: none;
+  color: white;
+  margin: 0 10px;
 }
-div.app-header a.navigation.nav-link:hover {
-  color: black;
+div.app-header div.header-nav a.navigation.nav-link:hover {
+  color: #ffc2c2;
 }
-div.app-header a.navigation.nav-link:visited {
-  color: black;
-}
-div.app-header a.navigation.nav-link.current {
-  color: black;
-  font-weight: bold;
+div.app-header div.header-nav a.navigation.nav-link.current {
+  color: #ff8f8f;
   cursor: default;
 }
 
@@ -39,13 +50,13 @@ input.search {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
-  border: 1px solid #BBB;
+  border: 1px solid #333;
 }
 
 table.table {
   margin: 5px auto;
   border-collapse: collapse;
-  border: 1px solid #BBB;
+  border: 1px solid #333;
 }
 
 /* table header */
@@ -55,13 +66,13 @@ thead.table-header {
 }
 thead.table-header th.table-header {
   padding: 8px 4px;
-  border: 1px solid #BBB !important;
+  border: 1px solid #333 !important;
   color: black;
-  background-color: #f8f8f8;
+  background-color: #707070;
   text-transform: capitalize;
 }
 thead.table-header th.table-header:hover {
-  background-color: #f1f1f1;
+  background-color: dimgray;
 }
 thead.table-header th.table-header.sortable {
   cursor: pointer;
@@ -69,26 +80,26 @@ thead.table-header th.table-header.sortable {
 
 /* table body */
 tbody.table-body tr.odd-row {
-  background-color: white;
+  background-color: #f2f2f2;
 }
 tbody.table-body tr.even-row {
-  background-color: #FFF5F5;
+  background-color: #d9d9d9;
 }
 tbody.table-body tr:hover {
   cursor: default;
-  background-color: #ffe1e1;
+  background-color: #FFF5F5;
 }
 tbody.table-body tr td.table-cell {
   margin: 0;
   padding: 8px 4px;
-  border-left: 1px solid #dadada;
-  border-right: 1px solid #dadada;
+  border-left: 1px solid #525252;
+  border-right: 1px solid #525252;
 }
 tbody.table-body tr td.table-cell.left-end {
-  border-left-color: #BBB;
+  border-left-color: #333;
 }
 tbody.table-body tr td.table-cell.right-end {
-  border-right-color: #BBB;
+  border-right-color: #333;
 }
 
 @media screen and (min-width: 1001px) {
