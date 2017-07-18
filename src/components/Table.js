@@ -109,6 +109,7 @@ class Table extends React.Component {
    * filterText : a search string
    */
   filter (data, columns, filterText) {
+    filterText = filterText.toLowerCase()
     return data.slice().filter((item) => {
       // check each column for the search term
       for (let column of columns) {
@@ -125,7 +126,6 @@ class Table extends React.Component {
           }
         })().toLowerCase()
         // include the current item if matched
-        filterText = filterText.toLowerCase()
         if (column.isSearchable && searchText.indexOf(filterText) > -1) {
           return true
         }

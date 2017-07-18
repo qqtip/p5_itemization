@@ -1,6 +1,6 @@
 {
   "name": "persona5_items",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "private": true,
   "homepage": "https://quan.github.io/persona5_items",
   "repository": {
@@ -21,8 +21,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "build:sass": "sass ./src/assets/css/index.scss > ./src/assets/css/index.css",
+    "prebuild": "npm run build:sass",
+    "build": "react-scripts build",
     "pretest": "standard",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",

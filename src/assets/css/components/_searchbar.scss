@@ -1,0 +1,12 @@
+$-vertical-padding: 4px;
+$-horizontal-padding: 6px;
+$-border-radius: 3px;
+
+input.search {
+  display: block;
+  width: $search-width;
+  margin: $vertical-margin auto;
+  padding: $-vertical-padding $-horizontal-padding;
+  @include border-radius($-border-radius);
+  border: $border-style $theme-color;
+}

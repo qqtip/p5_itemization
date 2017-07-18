@@ -1,0 +1,61 @@
+$-table-cell-padding: 4px;
+$-table-cell-border-color: lighten($theme-color, 12%);
+
+@mixin -table-cell-padding() {
+  margin: 0;
+  padding: ($-table-cell-padding * 2) $-table-cell-padding;
+}
+
+div.table-container {
+  width: 100%;
+}
+
+/* table */
+table.table {
+  margin: $vertical-margin auto;
+  width: $table-width;
+  min-width: $min-table-width;
+  border: $border-style $theme-color; 
+  border-collapse: collapse;
+}
+
+/* table header */
+thead.table-header {
+  cursor: default;
+
+  th.table-header {
+    @include -table-cell-padding();
+    background-color: lighten($theme-color, 24%);
+    border: $border-style $theme-color !important;
+    /* text styles */
+    text-transform: capitalize;
+    color: $secondary-color; 
+
+    &.sortable {
+      cursor: pointer;
+      &:hover { background-color: lighten($theme-color, 17%); }
+    }
+  }
+}
+
+/* table body */
+tbody.table-body {
+  tr {
+    &.odd-row { background-color: lighten($theme-color, 75%); }
+    &.even-row { background-color: lighten($theme-color, 65%); }
+
+    &:hover {
+      cursor: default;
+      background-color: lighten($tertiary-color, 45%);
+    }
+  }
+
+  td.table-cell {
+    @include -table-cell-padding();
+    border-left: $border-style $-table-cell-border-color;
+    border-right: $border-style $-table-cell-border-color;
+
+    &.left-end { border-left-color: $theme-color }
+    &.right-end { border-right-color: $theme-color }
+  }
+}

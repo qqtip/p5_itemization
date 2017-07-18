@@ -23,13 +23,13 @@
       "dataType": "string",
       "isSortable": true,
       "isSearchable": true,
-      "hideOnMobile": false
+      "hideOnMobile": true
     }, {
       "label": "price",
       "dataType": "number",
       "isSortable": true,
       "isSearchable": false,
-      "hideOnMobile": false
+      "hideOnMobile": true
     }
   ],
   "defaultSortColumnIndex": 0

@@ -1,0 +1,45 @@
+/* fonts */
+$base-font-size: 13px;
+$thin: 300;
+$extra-thin: 100;
+$header-font: 'Lato';
+$body-font: 'Open Sans';
+$backup-fonts: Helvetica, Arial, sans-serif;
+$header-font-stack: $header-font, $backup-fonts;
+$body-font-stack: $body-font, $backup-fonts;
+
+/* colors */
+$theme-color: #333; // dark grey
+$secondary-color: black;
+$tertiary-color: rgb(200, 10, 10); // red
+
+/* sizes */
+$vertical-margin: 7px;
+$table-width: 94%;
+$min-table-width: 400px;
+$search-width: 250px;
+$border-style: 1px solid;
+$media-cutoff: 768px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+body {
+  margin: 0; padding: 0;
+  width: 100%;
+  font-family: $body-font-stack;
+  font-size: $base-font-size;
+  background-color: darken($theme-color, 5%);
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+@media screen and (max-width: #{$media-cutoff - 1}) {
+  .mobile-hidden { display: none }
+}

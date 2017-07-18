@@ -5,7 +5,7 @@
       "dataType": "string",
       "isSortable": true,
       "isSearchable": true,
-      "hideOnMobile": false
+      "hideOnMobile": true
     }, {
       "label": "persona",
       "dataType": "string",
@@ -17,7 +17,7 @@
       "dataType": "number",
       "isSortable": true,
       "isSearchable": false,
-      "hideOnMobile": false
+      "hideOnMobile": true
     }, {
       "label": "itemization",
       "dataType": "string",
@@ -29,19 +29,19 @@
       "dataType": "string",
       "isSortable": true,
       "isSearchable": true,
-      "hideOnMobile": false
+      "hideOnMobile": true
     }, {
       "label": "description",
       "dataType": "string",
       "isSortable": false,
       "isSearchable": true,
-      "hideOnMobile": true
+      "hideOnMobile": false
     }, {
       "label": "cost",
       "dataType": "number",
       "isSortable": false,
       "isSearchable": false,
-      "hideOnMobile": false
+      "hideOnMobile": true
     }
   ],
   "defaultSortColumnIndex": 0

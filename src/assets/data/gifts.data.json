@@ -11,6 +11,17 @@
     "location": "Underground Mall (Supermarket)",
     "price": 2400
   }, {
+    "name": "Uji Matcha Flan",
+    "confidants +3": [
+      "Lovers"
+    ],
+    "confidants +2": [
+      "Star",
+      "Devil"
+    ],
+    "location": "TV Shopping 6/26 (x2)",
+    "price": 2980
+  }, {
     "name": "Chocolate Truffles",
     "confidants +3": [
       "Empress",
