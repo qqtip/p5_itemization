@@ -19,6 +19,12 @@
       "isSearchable": true,
       "hideOnMobile": false
     }, {
+      "label": "description",
+      "dataType": "string",
+      "isSortable": false,
+      "isSearchable": true,
+      "hideOnMobile": true
+    }, {
       "label": "location",
       "dataType": "string",
       "isSortable": true,

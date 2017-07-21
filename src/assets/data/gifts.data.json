@@ -8,6 +8,7 @@
       "Star",
       "Devil"
     ],
+    "description": "Pudding made from uji matcha green tea. May make a nice gift.",
     "location": "Underground Mall (Supermarket)",
     "price": 2400
   }, {
@@ -19,6 +20,7 @@
       "Star",
       "Devil"
     ],
+    "description": "Pudding made from uji matcha green tea. May make a nice gift.",
     "location": "TV Shopping 6/26 (x2)",
     "price": 2980
   }, {
@@ -31,6 +33,7 @@
     "confidants +2": [
       "Death"
     ],
+    "description": "Chocolate truffles made with meticulous detail. May make a nice gift.",
     "location": "Underground Mall (Supermarket)",
     "price": 2800
   }, {
@@ -43,6 +46,7 @@
       "Death",
       "Temperance"
     ],
+    "description": "A cake with refined texture topped with coarse sugar. May make a nice gift.",
     "location": "Underground Mall (Supermarket)",
     "price": 1500
   }, {
@@ -55,6 +59,7 @@
       "Empress",
       "Devil"
     ],
+    "description": "A decorative mini cactus you can put on a desk. May make a nice gift.",
     "location": "Underground Mall (Flower Shop)",
     "price": 1600
   }, {
@@ -66,6 +71,7 @@
       "Temperance",
       "Lovers"
     ],
+    "description": "A famous brand that gives off a subdued fragrance. May make a nice gift.",
     "location": "Underground Mall (Cosmetics Store)",
     "price": 7800
   }, {
@@ -76,6 +82,7 @@
     "confidants +2": [
       "Temperance"
     ],
+    "description": "High-quality incense with a relaxing aroma. May make a nice gift.",
     "location": "Underground Mall (Cosmetics Store)",
     "price": 3800
   }, {
@@ -86,6 +93,7 @@
     ],
     "confidants +2": [
     ],
+    "description": "An intensely red lipstick worn by a popular model. May make a nice gift.",
     "location": "Underground Mall (Cosmetics Store)",
     "price": 6000
   }, {
@@ -97,6 +105,7 @@
       "Devil",
       "Temperance"
     ],
+    "description": "Ten CDs of Yoncha-tei Nokisuke's skits. May make a nice gift.",
     "location": "Underground Mall (Music Store)",
     "price": 3000
   }, {
@@ -109,6 +118,7 @@
     "confidants +2": [
       "Fortune"
     ],
+    "description": "2000 materpieces in a limited edition box. May make a nice gift.",
     "location": "Underground Mall (Music Store)",
     "price": 3000
   }, {
@@ -120,6 +130,7 @@
     "confidants +2": [
       "Lovers"
     ],
+    "description": "Complete history of KGB49 from start to present. May make a nice gift.",
     "location": "Underground Mall (Music Store)",
     "price": 3000
   }, {
@@ -132,6 +143,7 @@
       "Star",
       "Fortune"
     ],
+    "description": "A crepe fabric book cover with a Japanese pattern. May make a nice gift.",
     "location": "Underground Mall (Jap. Sundries Shop)",
     "price": 3000
   }, {
@@ -143,6 +155,7 @@
       "Star",
       "Fortune"
     ],
+    "description": "A palm-sized, colorful glass flower vase. May make a nice gift.",
     "location": "Underground Mall (Jap. Sundries Shop)",
     "price": 3200
   }, {
@@ -153,6 +166,7 @@
     "confidants +2": [
       "Devil"
     ],
+    "description": "A fan with vivid cherry blossoms painted on it. May make a nice gift.",
     "location": "Underground Mall (Jap. Sundries Shop)",
     "price": 4800
   }, {
@@ -166,6 +180,7 @@
     ],
     "confidants +2": [
     ],
+    "description": "",
     "location": "Underground Mall (Jewelry Store)",
     "price": 88000
   }, {
@@ -178,6 +193,7 @@
     ],
     "confidants +2": [
     ],
+    "description": "",
     "location": "Underground Mall (Jewelry Store)",
     "price": 68000
   }, {
@@ -190,6 +206,7 @@
     ],
     "confidants +2": [
     ],
+    "description": "",
     "location": "Shinjuku (General Store)",
     "price": 1800
   }, {
@@ -201,6 +218,7 @@
     ],
     "confidants +2": [
     ],
+    "description": "",
     "location": "Shinjuku (General Store)",
     "price": 4000
   }, {
@@ -212,6 +230,7 @@
     ],
     "confidants +2": [
     ],
+    "description": "",
     "location": "Shinjuku (General Store)",
     "price": 8000
   }, {
@@ -223,6 +242,7 @@
     ],
     "confidants +2": [
     ],
+    "description": "",
     "location": "Shinjuku at night (Flower Shop)",
     "price": 2400
   }, {
@@ -234,6 +254,7 @@
     "confidants +2": [
       "Empress"
     ],
+    "description": "",
     "location": "Shinjuku at night (Flower Shop)",
     "price": 3200
   }, {
@@ -244,6 +265,7 @@
     ],
     "confidants +2": [
     ],
+    "description": "",
     "location": "Akihabara (Otaku Goods Shop)",
     "price": 4800
   }, {
@@ -255,6 +277,7 @@
     "confidants +2": [
       "Empress"
     ],
+    "description": "",
     "location": "Akihabara (Otaku Goods Shop)",
     "price": 3600
   }, {
@@ -264,6 +287,7 @@
     ],
     "confidants +2": [
     ],
+    "description": "",
     "location": "Akihabara (Otaku Goods Shop)",
     "price": 3000
   }, {
@@ -274,6 +298,7 @@
     "confidants +2": [
       "Hermit"
     ],
+    "description": "",
     "location": "Akihabara (Electronics Superstore)",
     "price": 44800
   }, {
@@ -283,6 +308,7 @@
     ],
     "confidants +2": [
     ],
+    "description": "",
     "location": "Akihabara (Electronics Superstore)",
     "price": 39800
   }, {
@@ -292,6 +318,7 @@
     ],
     "confidants +2": [
     ],
+    "description": "",
     "location": "Akihabara (Electronics Superstore)",
     "price": 9800
   }, {
@@ -302,6 +329,7 @@
     "confidants +2": [
       "Empress"
     ],
+    "description": "",
     "location": "Shibuya Central Street (Rocinante)",
     "price": 5800
   }
