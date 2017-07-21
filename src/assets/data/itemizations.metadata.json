@@ -29,13 +29,13 @@
       "dataType": "string",
       "isSortable": true,
       "isSearchable": true,
-      "hideOnMobile": true
+      "hideOnMobile": false
     }, {
       "label": "description",
       "dataType": "string",
       "isSortable": false,
       "isSearchable": true,
-      "hideOnMobile": false
+      "hideOnMobile": true
     }, {
       "label": "cost",
       "dataType": "number",
