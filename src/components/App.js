@@ -26,8 +26,10 @@ class App extends React.Component {
       'gift'
     ]
 
+    const defaultTable = this.tables[0]
+
     this.state = {
-      table: this.tables[0],
+      table: defaultTable,
       searchString: ''
     }
   }
@@ -56,7 +58,7 @@ class App extends React.Component {
 
     return (
       <div className='App'>
-        <Header table={table} tables={this.tables} clickHandler={setTable}/>
+        <Header table={table} tables={this.tables} clickHandler={setTable} />
 
         <div className='table-container'>
           <SearchBar changeHandler={setFilter} />

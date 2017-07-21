@@ -74,6 +74,6 @@ div.header-nav {
 
 /* mobile styles */
 @media screen and (max-width: #{$media-cutoff - 1}) {
-  div.header-nav {  float: left; }
+  div.header-nav {  float: none; }
   div.app-header h2.title { display: none; }
 }

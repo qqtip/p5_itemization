@@ -1,9 +1,10 @@
 $-table-cell-padding: 4px;
 $-table-cell-border-color: lighten($theme-color, 12%);
 
-@mixin -table-cell-padding() {
+@mixin -table-cell-base() {
   margin: 0;
   padding: ($-table-cell-padding * 2) $-table-cell-padding;
+  font-size: $base-font-size;
 }
 
 div.table-container {
@@ -24,7 +25,7 @@ thead.table-header {
   cursor: default;
 
   th.table-header {
-    @include -table-cell-padding();
+    @include -table-cell-base();
     background-color: lighten($theme-color, 24%);
     border: $border-style $theme-color !important;
     /* text styles */
@@ -51,7 +52,7 @@ tbody.table-body {
   }
 
   td.table-cell {
-    @include -table-cell-padding();
+    @include -table-cell-base();
     border-left: $border-style $-table-cell-border-color;
     border-right: $border-style $-table-cell-border-color;
 

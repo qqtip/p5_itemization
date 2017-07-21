@@ -22,7 +22,7 @@ body {
 /* header bar */
 div.app-header {
   padding: 5px 0;
-  min-width: 400px;
+  min-width: 320px;
   height: 40px;
   background-color: black;
   border-bottom: 1px solid #4f0404;
@@ -87,7 +87,7 @@ div.header-nav a.navigation.nav-link:hover, div.header-nav a.navigation.nav-link
 /* mobile styles */
 @media screen and (max-width: 767px) {
   div.header-nav {
-    float: left;
+    float: none;
   }
 
   div.app-header h2.title {
@@ -114,7 +114,7 @@ div.table-container {
 table.table {
   margin: 7px auto;
   width: 94%;
-  min-width: 400px;
+  min-width: 320px;
   border: 1px solid #333;
   border-collapse: collapse;
 }
@@ -126,6 +126,7 @@ thead.table-header {
 thead.table-header th.table-header {
   margin: 0;
   padding: 8px 4px;
+  font-size: 13px;
   background-color: #707070;
   border: 1px solid #333 !important;
   /* text styles */
@@ -153,6 +154,7 @@ tbody.table-body tr:hover {
 tbody.table-body td.table-cell {
   margin: 0;
   padding: 8px 4px;
+  font-size: 13px;
   border-left: 1px solid #525252;
   border-right: 1px solid #525252;
 }
