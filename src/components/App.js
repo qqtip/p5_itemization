@@ -22,8 +22,9 @@ class App extends React.Component {
     super()
 
     this.tables = [
-      'itemization',
-      'gift'
+      'shop',
+      'gift',
+      'itemization'
     ]
 
     const defaultTable = this.tables[0]
