@@ -2,6 +2,8 @@ import itemizationData from '../assets/data/itemizations.data.json'
 import itemizationMeta from '../assets/data/itemizations.metadata.json'
 import giftData from '../assets/data/gifts.data.json'
 import giftMeta from '../assets/data/gifts.metadata.json'
+import shopData from '../assets/data/shops.data.json'
+import shopMeta from '../assets/data/shops.metadata.json'
 
 const _data = {
   'itemization': {
@@ -11,6 +13,10 @@ const _data = {
   'gift': {
     'data': giftData,
     'metadata': giftMeta
+  },
+  'shop': {
+    'data': shopData,
+    'metadata': shopMeta
   }
 }
 

@@ -110,7 +110,7 @@ class Table extends React.Component {
    */
   filter (data, columns, filterText) {
     filterText = filterText.toLowerCase()
-    return data.slice().filter((item) => {
+    return data.slice().filter(item => {
       // check each column for the search term
       for (let column of columns) {
         const field = column.label
