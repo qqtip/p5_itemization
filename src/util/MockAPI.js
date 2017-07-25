@@ -1,9 +1,9 @@
-import itemizationData from '../assets/data/itemizations.data.json'
-import itemizationMeta from '../assets/data/itemizations.metadata.json'
-import giftData from '../assets/data/gifts.data.json'
-import giftMeta from '../assets/data/gifts.metadata.json'
-import shopData from '../assets/data/shops.data.json'
-import shopMeta from '../assets/data/shops.metadata.json'
+import itemizationData from '../data/itemizations.data.json'
+import itemizationMeta from '../data/itemizations.metadata.json'
+import giftData from '../data/gifts.data.json'
+import giftMeta from '../data/gifts.metadata.json'
+import shopData from '../data/shops.data.json'
+import shopMeta from '../data/shops.metadata.json'
 
 const _data = {
   'itemization': {

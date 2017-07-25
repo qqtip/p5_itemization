@@ -6,7 +6,7 @@ class TableHeader extends React.Component {
   // clickHandler
 
   renderColumn (column, index) {
-    let classes = ['table-header']
+    const classes = ['table-header']
     if (column.hideOnMobile) {
       classes.push('mobile-hidden')
     }
@@ -15,17 +15,14 @@ class TableHeader extends React.Component {
     }
 
     const label = column.label
-
+    const className = classes.join(' ')
     const clickHandler = (column.isSortable)
       ? this.props.clickHandler
       : () => {}
 
     return (
-      <th
-        key={index}
-        className={classes.join(' ')}
-        onClick={() => clickHandler(column)}
-      >{label}
+      <th key={index} className={className} onClick={() => clickHandler(column)}>
+        {label}
       </th>
     )
   }

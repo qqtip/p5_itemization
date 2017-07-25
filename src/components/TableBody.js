@@ -9,7 +9,7 @@ class TableRow extends React.Component {
   renderCell (column, index) {
     const columns = this.props.columns
 
-    let classes = ['table-cell']
+    const classes = ['table-cell']
     if (column === columns[columns.length - 1]) {
       classes.push('right-end')
     }
@@ -22,13 +22,12 @@ class TableRow extends React.Component {
 
     const item = this.props.item
     const label = column.label
+    const className = classes.join(' ')
     const data = Array.isArray(item[label])
       ? item[label].join(', ')
       : item[label]
 
-    return (
-      <td key={index} className={classes.join(' ')}>{data}</td>
-    )
+    return <td key={index} className={className}>{data}</td>
   }
 
   render () {
@@ -53,7 +52,7 @@ class TableBody extends React.Component {
         return (
           <TableRow
             key={index} columns={columns}
-            item={item} isOdd={index % 2 === 0}
+            item={item} isOdd={index % 2}
           />
         )
       }

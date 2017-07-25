@@ -84,7 +84,7 @@ class Table extends React.Component {
     const dataType = this.sortColumn.dataType
     const label = this.sortColumn.label
     const reverse = this.sortReverse
-    let newData = data.slice()
+    const newData = data.slice()
 
     newData.sort((a, b) => {
       switch (dataType) {

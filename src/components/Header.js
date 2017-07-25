@@ -7,14 +7,18 @@ class Header extends React.Component {
 
     const navLinks = tables.map((name, index) => {
       const link = name + 's'
-      let classes = ['navigation', 'nav-link']
+      const classes = ['navigation', 'nav-link']
 
       if (name === currentTable) {
         classes.push('current')
-        return <a key={index} className={classes.join(' ')}>{link}</a>
+        const className = classes.join(' ')
+
+        return <a key={index} className={className}>{link}</a>
       } else {
+        const className = classes.join(' ')
         const clickHandler = () => this.props.clickHandler(name)
-        return <a key={index} className={classes.join(' ')} href='' onClick={clickHandler}>{link}</a>
+
+        return <a key={index} className={className} href='' onClick={clickHandler}>{link}</a>
       }
     })
 
@@ -25,13 +29,14 @@ class Header extends React.Component {
     const github = 'https://www.github.com/quan/persona5_items'
     const target = '_BLANK'
     const rel = 'noopener noreferrer'
+    const title = 'Persona 5 Items'
 
     return (
       <div className='app-header'>
         <div className='header-title'>
           <h2 className='title'>
             <a href={github} target={target} rel={rel} className='uppercase'>
-              Persona 5 Items
+              {title}
             </a>
           </h2>
         </div>

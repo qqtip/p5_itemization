@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header.js'
 import Table from './Table.js'
-import MockAPI from '../utils/MockAPI.js'
+import MockAPI from '../util/MockAPI.js'
 
 class SearchBar extends React.Component {
   render () {
@@ -26,7 +26,6 @@ class App extends React.Component {
       'gift',
       'itemization'
     ]
-
     const defaultTable = this.tables[0]
 
     this.state = {
