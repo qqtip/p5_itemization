@@ -1,12 +1,20 @@
 import React from 'react'
 
 class Header extends React.Component {
+  /* props */
+  // table
+  // tables
+  // - KEY: name
+  // clickHandler
+
   renderNav () {
     const currentTable = this.props.table
     const tables = this.props.tables
 
-    const navLinks = tables.map((name, index) => {
+    const navLinks = Object.keys(tables).map((key, index) => {
+      const name = tables[key]
       const link = name + 's'
+      console.log(link)
       const classes = ['navigation', 'nav-link']
 
       if (name === currentTable) {

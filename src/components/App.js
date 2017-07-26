@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header.js'
 import Table from './Table.js'
-import MockAPI from '../util/MockAPI.js'
+import MockAPI from '../api/FakeAPI.js'
 
 class SearchBar extends React.Component {
   render () {
@@ -17,19 +17,18 @@ class SearchBar extends React.Component {
   }
 }
 
+const TABLE = Object.freeze({
+  SHOP: 'shop',
+  GIFT: 'gift',
+  ITEMIZATION: 'itemization'
+})
+
 class App extends React.Component {
   constructor () {
     super()
 
-    this.tables = [
-      'shop',
-      'gift',
-      'itemization'
-    ]
-    const defaultTable = this.tables[0]
-
     this.state = {
-      table: defaultTable,
+      table: TABLE.SHOP,
       searchString: ''
     }
   }
@@ -58,7 +57,7 @@ class App extends React.Component {
 
     return (
       <div className='App'>
-        <Header table={table} tables={this.tables} clickHandler={setTable} />
+        <Header table={table} tables={TABLE} clickHandler={setTable} />
 
         <div className='table-container'>
           <SearchBar changeHandler={setFilter} />
