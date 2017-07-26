@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 
 class TableHeader extends React.Component {
   /* props */
@@ -6,16 +7,12 @@ class TableHeader extends React.Component {
   // clickHandler
 
   renderColumn (column, index) {
-    const classes = ['table-header']
-    if (column.hideOnMobile) {
-      classes.push('mobile-hidden')
-    }
-    if (column.isSortable) {
-      classes.push('sortable')
-    }
-
+    const className = classNames({
+      'table-header': true,
+      'mobile-hidden': column.hideOnMobile,
+      'sortable': column.isSortable
+    })
     const label = column.label
-    const className = classes.join(' ')
     const clickHandler = (column.isSortable)
       ? this.props.clickHandler
       : () => {}

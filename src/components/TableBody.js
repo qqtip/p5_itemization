@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 
 class TableRow extends React.Component {
   /* props */
@@ -9,20 +10,15 @@ class TableRow extends React.Component {
   renderCell (column, index) {
     const columns = this.props.columns
 
-    const classes = ['table-cell']
-    if (column === columns[columns.length - 1]) {
-      classes.push('right-end')
-    }
-    if (column === columns[0]) {
-      classes.push('left-end')
-    }
-    if (column.hideOnMobile) {
-      classes.push('mobile-hidden')
-    }
+    const className = classNames({
+      'table-cell': true,
+      'right-end': column === columns.slice(-1).pop(),
+      'left-end': column === columns[0],
+      'mobile-hidden': column.hideOnMobile
+    })
 
     const item = this.props.item
     const label = column.label
-    const className = classes.join(' ')
     const data = Array.isArray(item[label])
       ? item[label].join(', ')
       : item[label]
