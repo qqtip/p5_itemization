@@ -1,10 +1,10 @@
 {
-  "name": "persona5-items",
-  "version": "1.4.3",
+  "name": "persona5_items",
+  "version": "1.4.4",
   "private": true,
   "standard": {
     "env": [
-      "mocha"
+      "jest"
     ]
   },
   "homepage": "https://quan.github.io/persona5_items",
@@ -20,13 +20,16 @@
     "sticky-table-headers": "^0.1.19"
   },
   "devDependencies": {
+    "enzyme": "^2.9.1",
     "gh-pages": "^1.0.0",
     "react-scripts": "1.0.7",
+    "react-test-renderer": "^15.6.1",
+    "sass": "^1.0.0-beta.2",
     "standard": "^10.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:sass": "sass ./src/css/index.scss > ./src/css/index.css",
+    "build:sass": "./node_modules/.bin/sass ./src/css/index.scss > ./src/css/index.css",
     "prebuild": "npm run build:sass",
     "build": "react-scripts build",
     "pretest": "standard",

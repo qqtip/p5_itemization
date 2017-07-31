@@ -14,7 +14,7 @@ class TableRow extends React.Component {
       'table-cell': true,
       'right-end': column === columns.slice(-1).pop(),
       'left-end': column === columns[0],
-      'mobile-hidden': column.hideOnMobile
+      'mobile-hidden': column.mobileHidden
     })
 
     const item = this.props.item

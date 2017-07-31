@@ -9,11 +9,11 @@ class TableHeader extends React.Component {
   renderColumn (column, index) {
     const className = classNames({
       'table-header': true,
-      'mobile-hidden': column.hideOnMobile,
-      'sortable': column.isSortable
+      'mobile-hidden': column.mobileHidden,
+      'sortable': column.sortable
     })
     const label = column.label
-    const clickHandler = (column.isSortable)
+    const clickHandler = (column.sortable)
       ? this.props.clickHandler
       : () => {}
 

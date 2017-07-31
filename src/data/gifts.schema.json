@@ -1,0 +1,42 @@
+{
+  "columns": [
+    {
+      "label": "name",
+      "type": "string",
+      "sortable": true,
+      "searchable": true,
+      "mobileHidden": false
+    }, {
+      "label": "description",
+      "type": "string",
+      "sortable": false,
+      "searchable": true,
+      "mobileHidden": true
+    }, {
+      "label": "confidants +3",
+      "type": "array",
+      "sortable": false,
+      "searchable": true,
+      "mobileHidden": false
+    }, {
+      "label": "confidants +2",
+      "type": "array",
+      "sortable": false,
+      "searchable": true,
+      "mobileHidden": false
+    }, {
+      "label": "location",
+      "type": "string",
+      "sortable": true,
+      "searchable": true,
+      "mobileHidden": true
+    }, {
+      "label": "price",
+      "type": "number",
+      "sortable": true,
+      "searchable": false,
+      "mobileHidden": true
+    }
+  ],
+  "defaultSortColumnIndex": 0
+}

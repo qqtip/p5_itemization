@@ -1,71 +1,77 @@
 import React from 'react'
-import TableHeader from './TableHeader.js'
-import TableBody from './TableBody.js'
 import jquery from 'jquery'
 
+import TableHeader from './TableHeader.js'
+import TableBody from './TableBody.js'
+import filter from '../utils/filter.js'
+
+/** A sortable table that displays data defined by a schema. */
 class Table extends React.Component {
   /* props */
   // data
-  // metadata
+  // schema
   //  columns
   //  default sort column
-  // searchString
+  // searchPattern
 
   constructor (props) {
     super()
 
+    // Initialize jQuery and sticky table headers
     window.$ = window.jQuery = jquery
     require('sticky-table-headers')
 
+    // Set component lifescycle handlers
     this.componentDidMount = this.initTableHeader
     this.componentDidUpdate = this.reinitTableHeader
-    this.componentWillReceiveProps = this.checkProps
 
+    // Initialize the table
     this.setSortingColumn = this.setSortingColumn.bind(this)
     this.initTable(props)
   }
 
-  /* prepares data for mounting or changing the table */
+  /** Initializes table data mounted or changed. */
   initTable (props) {
-    const sortColumnIndex = props.metadata.defaultSortColumnIndex
-    const columns = props.metadata.columns
+    const sortColumnIndex = props.schema.defaultSortColumnIndex || 0
+    const columns = props.schema.columns
 
     this.sortColumn = columns[sortColumnIndex]
     this.sortReverse = false
 
-    this.state = { data: this.filter(props.data, columns, props.searchString) }
+    this.state = { data: filter(props.data, columns, props.searchPattern) }
   }
 
-  /* initialize the table header to stick when scrolling */
+  /** Initialize the sticky table headers. */
   initTableHeader () {
     jquery('table.table').stickyTableHeaders()
   }
 
-  /* reset sticky table header on table change */
+  /** Reset sticky table headers when the table size changes. */
   reinitTableHeader () {
     jquery('table.table').stickyTableHeaders('destroy')
     this.initTableHeader()
   }
 
-  checkProps (newProps) {
+  /** Checks and responds to updated props. */
+  componentWillReceiveProps (newProps) {
     // reinitialize the table if the table was switched
-    if (this.props.metadata !== newProps.metadata) {
+    if (this.props.schema !== newProps.schema) {
       this.initTable(newProps)
-    // otherwise re-filter with the new search string
+    // otherwise simply re-filter with the new search string
     } else {
       this.setState({data:
         this.sort(
-          this.filter(
+          filter(
             newProps.data.slice(),
-            newProps.metadata.columns,
-            newProps.searchString
+            newProps.schema.columns,
+            newProps.searchPattern
           )
         )
       })
     }
   }
 
-  /* a handler for column header clicks */
+  /** Sets the column by which the table is being sorted. */
   setSortingColumn (column) {
     // reverse sorting order if the same column is selected
     if (this.sortColumn === column) {
@@ -79,7 +85,7 @@ class Table extends React.Component {
     this.setState({data: this.sort(this.state.data)})
   }
 
-  /* sorts the given data by the current sorting column */
+  /** Sorts the given data by the current sorting column */
   sort (data) {
     const dataType = this.sortColumn.dataType
     const label = this.sortColumn.label
@@ -88,11 +94,11 @@ class Table extends React.Component {
 
     newData.sort((a, b) => {
       switch (dataType) {
-        case 'string': default:
+        case 'String': case 'string': default:
           return (reverse)
             ? b[label].localeCompare(a[label])
             : a[label].localeCompare(b[label])
-        case 'number':
+        case 'Number': case 'number':
           return (reverse)
             ? b[label] - a[label]
             : a[label] - b[label]
@@ -102,44 +108,10 @@ class Table extends React.Component {
     return newData
   }
 
-  /**
-   * Filters an array of data by a search string.
-   * data       : an array of data
-   * columns    : an array containing column metadata
-   * filterText : a search string
-   */
-  filter (data, columns, filterText) {
-    filterText = filterText.toLowerCase()
-
-    return data.slice().filter(item => {
-      // check each column for the search term
-      for (let column of columns) {
-        const field = column.label
-        // convert value to searchable string
-        const searchText = (() => {
-          switch (column.dataType) {
-            case 'string': default:
-              return item[field]
-            case 'array':
-              return item[field].join(' ')
-            case 'number':
-              return String(item[field])
-          }
-        })().toLowerCase()
-        // include the current item if matched
-        if (column.isSearchable && searchText.indexOf(filterText) > -1) {
-          return true
-        }
-      }
-      // filter items with no matching fields
-      return false
-    })
-  }
-
   render () {
-    const columns = this.props.metadata.columns
-    const clickHandler = this.setSortingColumn
+    const columns = this.props.schema.columns
     const data = this.state.data
+    const clickHandler = this.setSortingColumn
 
     return (
       <table className='table'>
