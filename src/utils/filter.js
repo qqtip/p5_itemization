@@ -18,7 +18,6 @@ const searchValue = (type, value) => {
  */
 module.exports = (data, columns, pattern) => {
   pattern = pattern.toLowerCase()
-  console.log('filtering for pattern "' + pattern + '"')
 
   return data.slice().filter(item => {
     // check each field of the row for the search term
