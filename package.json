@@ -1,16 +1,16 @@
 {
-  "name": "persona5_items",
-  "version": "1.4.4",
+  "name": "persona5-items",
+  "version": "1.4.5",
   "private": true,
   "standard": {
     "env": [
       "jest"
     ]
   },
-  "homepage": "https://quan.github.io/persona5_items",
+  "homepage": "https://quan.github.io/persona5-items",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quan/persona5_items.git"
+    "url": "https://github.com/quan/persona5-items.git"
   },
   "dependencies": {
     "classnames": "^2.2.5",
