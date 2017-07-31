@@ -29,11 +29,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:sass": "./node_modules/.bin/sass ./src/css/index.scss > ./src/css/index.css",
     "prebuild": "npm run build:sass",
     "build": "react-scripts build",
-    "pretest": "standard",
+    "build:sass": "./node_modules/.bin/sass ./src/css/index.scss > ./src/css/index.css",
+    "pretest": "npm run test:linter",
     "test": "react-scripts test --env=jsdom",
+    "test:linter": "./node_modules/.bin/standard --fix",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
