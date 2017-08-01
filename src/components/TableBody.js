@@ -4,16 +4,17 @@ import classNames from 'classnames'
 class TableRow extends React.Component {
   renderCell (column, index) {
     const columns = this.props.columns
+    const label = column.label
 
-    const className = classNames({
-      'table-cell': true,
-      'right-end': column === columns.slice(-1).pop(),
-      'left-end': column === columns[0],
-      'mobile-hidden': column.mobileHidden
-    })
+    const className = classNames(
+      label, 'table-cell', {
+        'right-end': column === columns.slice(-1).pop(),
+        'left-end': column === columns[0],
+        'mobile-hidden': column.mobileHidden
+      }
+    )
 
     const item = this.props.item
-    const label = column.label
     const data = Array.isArray(item[label])
       ? item[label].join(', ')
       : item[label]

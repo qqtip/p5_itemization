@@ -37,7 +37,7 @@ class App extends React.Component {
 
   /** Renders the search bar that accepts user input. */
   renderSearchBar () {
-    const changeHandler = this.setPattern.changeHandler
+    const changeHandler = this.setPattern
 
     return (
       <input

@@ -21,16 +21,12 @@ class Table extends React.Component {
     window.$ = window.jQuery = jquery
     require('sticky-table-headers')
 
-    // Set component lifecycle handlers
-    this.componentDidMount = this.initTableHeader
-    this.componentDidUpdate = this.reinitTableHeader
-
     // Initialize the table
     this.setSortingColumn = this.setSortingColumn.bind(this)
     this.initTable(props)
   }
 
-  /** Initializes table data mounted or changed. */
+  /** Initializes the table when mounted or changed. */
   initTable (props) {
     const columns = props.schema.columns
     const sortColumnIndex = props.schema.defaultSortColumnIndex || -1
@@ -40,15 +36,15 @@ class Table extends React.Component {
     this.state = { data: filter(props.data, columns, props.searchPattern) }
   }
 
-  /** Initialize the sticky table headers. */
-  initTableHeader () {
+  /** Initialize the sticky table headers when the component mounts. */
+  componentDidMount () {
     jquery('table.table').stickyTableHeaders()
   }
 
   /** Reset sticky table headers when the table size changes. */
-  reinitTableHeader () {
+  componentDidUpdate () {
     jquery('table.table').stickyTableHeaders('destroy')
-    this.initTableHeader()
+    this.componentDidMount()
   }
 
   /** Checks and responds to updated props. */
@@ -86,7 +82,7 @@ class Table extends React.Component {
 
   /** Sorts the given data by the current sorting column */
   sort (data) {
-    const dataType = this.sortColumn.dataType
+    const dataType = this.sortColumn.type
     const label = this.sortColumn.label
     const reverse = this.sortReverse
     const newData = data.slice()
