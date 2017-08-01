@@ -32,10 +32,9 @@ class Table extends React.Component {
 
   /** Initializes table data mounted or changed. */
   initTable (props) {
-    const sortColumnIndex = props.schema.defaultSortColumnIndex || 0
     const columns = props.schema.columns
-
-    this.sortColumn = columns[sortColumnIndex]
+    const sortColumnIndex = props.schema.defaultSortColumnIndex || -1
+    this.sortColumn = sortColumnIndex >= 0 ? columns[sortColumnIndex] : null
     this.sortReverse = false
 
     this.state = { data: filter(props.data, columns, props.searchPattern) }
