@@ -21,7 +21,7 @@ class Table extends React.Component {
     window.$ = window.jQuery = jquery
     require('sticky-table-headers')
 
-    // Set component lifescycle handlers
+    // Set component lifecycle handlers
     this.componentDidMount = this.initTableHeader
     this.componentDidUpdate = this.reinitTableHeader
 
@@ -79,7 +79,7 @@ class Table extends React.Component {
     // otherwise sort by the new column
     } else {
       this.sortColumn = column
-      this.sortedReverse = false
+      this.sortReverse = false
     }
 
     this.setState({data: this.sort(this.state.data)})

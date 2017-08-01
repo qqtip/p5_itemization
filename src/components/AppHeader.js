@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-class Header extends React.Component {
+class AppHeader extends React.Component {
   renderNav () {
     const currentTable = this.props.table
     const tables = this.props.tables
@@ -10,11 +10,10 @@ class Header extends React.Component {
       let name = tables[key]
       let link = name + 's'
       let clickHandler = () => this.props.clickHandler(name)
-      let className = classNames({
-        'navigation': true,
-        'nav-link': true,
-        'current': name === currentTable
-      })
+      let className = classNames(
+        'navigation', 'nav-link', link,
+        {'current': name === currentTable}
+      )
 
       return (name === currentTable)
         ? <a key={index} className={className}>{link}</a>
@@ -45,4 +44,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header
+export default AppHeader

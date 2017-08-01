@@ -2,10 +2,6 @@ import React from 'react'
 import classNames from 'classnames'
 
 class TableHeader extends React.Component {
-  /* props */
-  // columns
-  // clickHandler
-
   renderColumn (column, index) {
     const className = classNames({
       'table-header': true,
