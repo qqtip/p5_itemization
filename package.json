@@ -1,6 +1,6 @@
 {
   "name": "persona5-items",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "private": true,
   "standard": {
     "env": [
@@ -25,6 +25,7 @@
     "react-scripts": "1.0.7",
     "react-test-renderer": "^15.6.1",
     "sass": "^1.0.0-beta.2",
+    "sinon": "^2.4.1",
     "standard": "^10.0.2"
   },
   "scripts": {

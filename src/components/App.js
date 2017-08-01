@@ -1,23 +1,7 @@
 import React from 'react'
-import Header from './Header.js'
+import AppHeader from './AppHeader.js'
 import Table from './Table.js'
 import api from '../utils/FakeAPI.js'
-
-/** A searchbar that accepts user input text. */
-class SearchBar extends React.Component {
-  /** Renders the component. */
-  render () {
-    const changeHandler = this.props.changeHandler
-
-    return (
-      <input id='search-bar'
-        className='search'
-        placeholder='Search'
-        onChange={changeHandler}
-      />
-    )
-  }
-}
 
 /* Enum for currently supported tables. */
 const TABLE = Object.freeze({
@@ -51,7 +35,21 @@ class App extends React.Component {
     this.setState({table: table})
   }
 
-  /** Render thetable contained in the app. */
+  /** Renders the search bar that accepts user input. */
+  renderSearchBar () {
+    const changeHandler = this.setPattern
+
+    return (
+      <input
+        id='search-bar'
+        className='search'
+        placeholder='Search'
+        onChange={changeHandler}
+      />
+    )
+  }
+
+  /** Render the table contained in the app. */
   renderTable () {
     const table = this.state.table
     const data = api.get.data(table)
@@ -64,15 +62,14 @@ class App extends React.Component {
   /** Renders the component. */
   render () {
     const table = this.state.table
-    const setPattern = this.setPattern
     const setTable = this.setTable
 
     return (
       <div className='App'>
-        <Header table={table} tables={TABLE} clickHandler={setTable} />
+        <AppHeader table={table} tables={TABLE} clickHandler={setTable} />
 
         <div className='table-container'>
-          <SearchBar changeHandler={setPattern} />
+          {this.renderSearchBar()}
           {this.renderTable()}
         </div>
       </div>

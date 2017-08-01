@@ -2,23 +2,19 @@ import React from 'react'
 import classNames from 'classnames'
 
 class TableRow extends React.Component {
-  /* props */
-  // columns
-  // data
-  // isOdd
-
   renderCell (column, index) {
     const columns = this.props.columns
+    const label = column.label
 
-    const className = classNames({
-      'table-cell': true,
-      'right-end': column === columns.slice(-1).pop(),
-      'left-end': column === columns[0],
-      'mobile-hidden': column.mobileHidden
-    })
+    const className = classNames(
+      label, 'table-cell', {
+        'right-end': column === columns.slice(-1).pop(),
+        'left-end': column === columns[0],
+        'mobile-hidden': column.mobileHidden
+      }
+    )
 
     const item = this.props.item
-    const label = column.label
     const data = Array.isArray(item[label])
       ? item[label].join(', ')
       : item[label]
@@ -27,7 +23,12 @@ class TableRow extends React.Component {
   }
 
   render () {
-    const className = this.props.isOdd ? 'odd-row' : 'even-row'
+    const className = classNames({
+      'table-row': true,
+      'odd-row': this.props.index % 2 === 0,
+      'even-row': this.props.index % 2 === 1
+    })
+
     const data = this.props.columns.map(
       (column, index) => this.renderCell(column, index)
     )
@@ -37,18 +38,14 @@ class TableRow extends React.Component {
 }
 
 class TableBody extends React.Component {
-  /* props */
-  // columns
-  // data
-
   render () {
     const columns = this.props.columns
     const rows = this.props.data.map(
       (item, index) => {
         return (
           <TableRow
-            key={index} columns={columns}
-            item={item} isOdd={index % 2}
+            key={index} index={index}
+            columns={columns} item={item}
           />
         )
       }
