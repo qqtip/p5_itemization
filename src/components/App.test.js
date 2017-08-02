@@ -5,7 +5,7 @@ import App from './App.js'
 import {mount} from 'enzyme'
 
 describe('App', () => {
-  var app
+  let app
 
   // Mount an instance of the App before each test
   beforeEach(() => {

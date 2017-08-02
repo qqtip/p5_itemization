@@ -17,7 +17,7 @@ function createTableWithPattern (pattern) {
 }
 
 describe('Table', () => {
-  var app
+  let app
 
   // Mount an instance of the App before each test.
   beforeEach(() => {
