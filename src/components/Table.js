@@ -49,29 +49,29 @@ class Table extends React.Component {
 
   /** Checks and responds to updated props. */
   componentWillReceiveProps (newProps) {
-    // reinitialize the table if the table was switched
+    // Reinitialize the table if the table was switched
     if (this.props.schema !== newProps.schema) {
       this.initTable(newProps)
-    // otherwise simply re-filter with the new search string
     } else {
-      this.setState({data:
-        this.sort(
-          filter(
-            newProps.data.slice(),
-            newProps.schema.columns,
-            newProps.searchPattern
-          )
-        )
+      // Filter the data by the new search pattern
+      const data = filter(
+        newProps.data.slice(),
+        newProps.schema.columns,
+        newProps.searchPattern
+      )
+      // Sort data if a sorting column is set then update state
+      this.setState({
+        data: this.sortColumn ? this.sort(data) : data
       })
     }
   }
 
   /** Sets the column by which the table is being sorted. */
   setSortingColumn (column) {
-    // reverse sorting order if the same column is selected
+    // Reverse sorting order if the same column is selected
     if (this.sortColumn === column) {
       this.sortReverse = !this.sortReverse
-    // otherwise sort by the new column
+    // Otherwise sort by the new column
     } else {
       this.sortColumn = column
       this.sortReverse = false

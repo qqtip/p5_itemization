@@ -111,5 +111,23 @@ describe('App', () => {
         expect(app.find('tr.table-row')).toHaveLength(1)
       }
     })
+
+    it('filters table data after switching tables', () => {
+      // Switch to Gifts table
+      app.find('a.gifts').simulate('click')
+
+      // Check that one item is rendered when filtering by 'snack pack'
+      const searchbar = app.find('input.search')
+      searchbar.simulate('change', {
+        target: {value: 'snack pack'}
+      })
+      expect(app.find('tr.table-row')).toHaveLength(1)
+
+      // Check that two items are rendered when filtering by 'uji matcha flan'
+      searchbar.simulate('change', {
+        target: {value: 'uji matcha flan'}
+      })
+      expect(app.find('tr.table-row')).toHaveLength(2)
+    })
   })
 })
