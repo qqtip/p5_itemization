@@ -22,17 +22,17 @@
   "devDependencies": {
     "enzyme": "^2.9.1",
     "gh-pages": "^1.0.0",
+    "node-sass": "^4.5.3",
     "react-scripts": "1.0.7",
     "react-test-renderer": "^15.6.1",
-    "sass": "^1.0.0-beta.2",
     "sinon": "^2.4.1",
     "standard": "^10.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "npm run build:sass",
+    "prebuild": "npm run build:css",
     "build": "react-scripts build",
-    "build:sass": "./node_modules/.bin/sass ./src/css/index.scss > ./src/css/index.css",
+    "build:css": "./node_modules/.bin/node-sass ./src/css/index.scss > ./src/css/index.css",
     "pretest": "npm run test:linter",
     "test": "react-scripts test --env=jsdom",
     "test:linter": "./node_modules/.bin/standard --fix",
