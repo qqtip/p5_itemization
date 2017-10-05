@@ -2,7 +2,7 @@
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-This is a simple web page written in React for looking up Persona 5 items. It currently features tables for shop inventories, persona itemizations, gift items. It is deployed on github [here](https://quan.github.io/persona5_items/).
+This is a simple web page written in React for looking up Persona 5 items. It currently features tables for shop inventories, persona itemizations, gift items. It is deployed on github [here](https://quan.github.io/persona5-items/).
 
 ### Shopping
 
